@@ -1,0 +1,5 @@
+span.center, div.center {
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+}

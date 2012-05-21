@@ -1,0 +1,9 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+# Index
+#~~~~~~
+index.title=Github repository analysis
+index.search.help=Enter the name of the repository you want to analyze
+index.search=Search

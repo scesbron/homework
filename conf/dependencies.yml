@@ -2,3 +2,4 @@
 
 require:
     - play
+    - play -> press 1.0.25

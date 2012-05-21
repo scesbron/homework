@@ -1,4 +1,18 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
+#{set title: messages.get('index.title') /}
 
-#{welcome /}
+<div class="container">
+	<div class="row-fluid">
+	  <div class="span8 offset2 center">
+	    #{form @showRepo(), class:'form-search'}
+	      <fieldset>
+	        <legend>&{'index.title'}</legend>
+	        <div class="control-group">
+	          <input type="text" name="repository" class="search-query span8" value="${repository}" placeholder="&{'index.search.help'}"/>
+	          <input type="submit" class="btn btn-primary" value="&{'index.search'}">
+	        </div>
+	      </fieldset>
+	    #{/form}
+	  </div>
+  </div>
+</div>

@@ -3,3 +3,49 @@ span.center, div.center {
   position: relative;
   vertical-align: middle;
 }
+.loading {
+	background: url(/public/images/ajax-loader.gif) no-repeat 50% 50px;
+	opacity: 0.5;
+	z-index: 10000;
+}
+body {
+    padding: 50px 0 0 0;
+}
+header {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+    height: 50px;
+    line-height: 50px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header #logo {
+	  font-size: 18px;
+    left: 50%;
+    margin-left: -480px;
+    position: absolute;
+}
+header nav {
+    margin-right: -480px;
+    position: absolute;
+    right: 50%;
+}
+header nav a {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 0 10px 4px;
+    text-decoration: none !important;
+}
+input#query {
+	margin: 40px 0px 0px 0px;
+}
+input#search {
+	margin: 20px 0px 0px 0px;
+}
+#data {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,3611 @@
+{
+    "commits": [
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-04 11:07:33", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "8690afecb038a56432355792825c948d9b05e36a", 
+            "login": "pk11", 
+            "message": "remove warning caused by new testOptions", 
+            "parents": [
+                [
+                    "72d08e9bc1c99c03decaf1d8c52a88d95a58ffc9", 
+                    1941, 
+                    63
+                ]
+            ], 
+            "space": 63, 
+            "time": 1942
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-04 11:07:33", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "a1a54f94dd62373937fe93724fde215dba4ce901", 
+            "login": "guillaumebort", 
+            "message": "Add back the jsr305 jar (required at compilation time)", 
+            "parents": [
+                [
+                    "8690afecb038a56432355792825c948d9b05e36a", 
+                    1942, 
+                    63
+                ]
+            ], 
+            "space": 63, 
+            "time": 1943
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-04 11:07:33", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "0ddfb6d4daabfdfd2b68f73c796d42d8a400e02a", 
+            "login": "guillaumebort", 
+            "message": "Fix Book generation", 
+            "parents": [
+                [
+                    "a1a54f94dd62373937fe93724fde215dba4ce901", 
+                    1943, 
+                    63
+                ]
+            ], 
+            "space": 63, 
+            "time": 1944
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-04 11:07:33", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "751ce7fedbfb93a7654230fc90850648103935ad", 
+            "login": "guillaumebort", 
+            "message": "Fix runtests", 
+            "parents": [
+                [
+                    "0ddfb6d4daabfdfd2b68f73c796d42d8a400e02a", 
+                    1944, 
+                    63
+                ]
+            ], 
+            "space": 63, 
+            "time": 1945
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-04 11:07:33", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "70591c3becce38b9efbf105089fbf4d6ffdfbaa1", 
+            "login": "pk11", 
+            "message": "testing qualified package names in integrationtest-java/test", 
+            "parents": [
+                [
+                    "751ce7fedbfb93a7654230fc90850648103935ad", 
+                    1945, 
+                    63
+                ]
+            ], 
+            "space": 63, 
+            "time": 1946
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-04 12:43:45", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "96f9a3702fc16ed30a0c9a1fcb9c9063f1b88e98", 
+            "login": "pk11", 
+            "message": "fixing the console after the scalax io update. copyTo's semantic is slightly different now, so we need to catch the exception in case of the target file was already copied over", 
+            "parents": [
+                [
+                    "3ea7d5f313be88d314e963e3805394fd536c43b0", 
+                    1926, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1947
+        }, 
+        {
+            "author": "Ehud Kaldor", 
+            "date": "2012-05-05 00:27:31", 
+            "gravatar": "0300f06ace25a2c85f5e05ade8592b0b", 
+            "id": "17aea9d6f9f2663ce67e0e4def56631437009dbb", 
+            "login": "ehudkaldor", 
+            "message": "added Andy Patrella's Cloudbees repository for neo4jPlayPlugin", 
+            "parents": [
+                [
+                    "4d29bb864a0c2df832a01c78c21d3eabf5e00d89", 
+                    1904, 
+                    71
+                ]
+            ], 
+            "space": 71, 
+            "time": 1948
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-05 03:41:00", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "efbbbda9e909c0c96a707ce3a2a16d0bcf9517fa", 
+            "login": "guillaumebort", 
+            "message": "Now propagate Http.Context during asynchronous calls in the Java API (experimental)", 
+            "parents": [
+                [
+                    "96f9a3702fc16ed30a0c9a1fcb9c9063f1b88e98", 
+                    1947, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1949
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-05 07:51:38", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "37546fd30909548fab2798234560d9cdd84afff3", 
+            "login": "julienrf", 
+            "message": "Add Promise.throwing(new RuntimeException()) in Java API", 
+            "parents": [
+                [
+                    "efbbbda9e909c0c96a707ce3a2a16d0bcf9517fa", 
+                    1949, 
+                    0
+                ]
+            ], 
+            "space": 37, 
+            "time": 1950
+        }, 
+        {
+            "author": "Kato Kazuyoshi", 
+            "date": "2012-05-05 09:02:14", 
+            "gravatar": "7828b45f8396aa361d85cead01fd99ca", 
+            "id": "f2b8b886ea18b67c536e3f452fa446d3f48de820", 
+            "login": "kzys", 
+            "message": "Fix typo: Your are -> You are", 
+            "parents": [
+                [
+                    "c500db755420851e2e6a476f36a3d3dbadbcf33a", 
+                    999, 
+                    0
+                ]
+            ], 
+            "space": 69, 
+            "time": 1951
+        }, 
+        {
+            "author": "Nicolas Leroux", 
+            "date": "2012-05-05 12:22:07", 
+            "gravatar": "34fe9578c98748263731073b5013cb07", 
+            "id": "99166e584c12fd77b4392d1e7e8d61a003547347", 
+            "login": "pepite", 
+            "message": "added group validation and a sample app that demonstrates their usage", 
+            "parents": [
+                [
+                    "efbbbda9e909c0c96a707ce3a2a16d0bcf9517fa", 
+                    1949, 
+                    0
+                ]
+            ], 
+            "space": 68, 
+            "time": 1952
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-05 14:57:31", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "be5c4a222a0521a76eab74838aeb1f1193d3b3ba", 
+            "login": "sadache", 
+            "message": "Merge pull request #285 from julienrf/feature/442-java-promise-throwing", 
+            "parents": [
+                [
+                    "99166e584c12fd77b4392d1e7e8d61a003547347", 
+                    1952, 
+                    68
+                ], 
+                [
+                    "37546fd30909548fab2798234560d9cdd84afff3", 
+                    1950, 
+                    37
+                ]
+            ], 
+            "space": 68, 
+            "time": 1953
+        }, 
+        {
+            "author": "Kato Kazuyoshi", 
+            "date": "2012-05-05 16:11:37", 
+            "gravatar": "7828b45f8396aa361d85cead01fd99ca", 
+            "id": "3c9430a119e4f7d20b5e81590d112967cdd2fff0", 
+            "login": "kzys", 
+            "message": "Fix typo: Java doesn't need \"=\" here", 
+            "parents": [
+                [
+                    "be5c4a222a0521a76eab74838aeb1f1193d3b3ba", 
+                    1953, 
+                    68
+                ]
+            ], 
+            "space": 70, 
+            "time": 1954
+        }, 
+        {
+            "author": "Kato Kazuyoshi", 
+            "date": "2012-05-05 19:50:56", 
+            "gravatar": "7828b45f8396aa361d85cead01fd99ca", 
+            "id": "869cf1404ded6ac06118cc7420f5fd3617aa288e", 
+            "login": "kzys", 
+            "message": "Add commons-lang3 instead of commons-lang", 
+            "parents": [
+                [
+                    "be5c4a222a0521a76eab74838aeb1f1193d3b3ba", 
+                    1953, 
+                    68
+                ]
+            ], 
+            "space": 68, 
+            "time": 1955
+        }, 
+        {
+            "author": "Kato Kazuyoshi", 
+            "date": "2012-05-05 19:52:39", 
+            "gravatar": "7828b45f8396aa361d85cead01fd99ca", 
+            "id": "fee8058af0dfffb557965983993931671cab2d6d", 
+            "login": "kzys", 
+            "message": "Add commons-lang3 instead of commons-lang", 
+            "parents": [
+                [
+                    "be5c4a222a0521a76eab74838aeb1f1193d3b3ba", 
+                    1953, 
+                    68
+                ]
+            ], 
+            "space": 69, 
+            "time": 1956
+        }, 
+        {
+            "author": "Nicolas Leroux", 
+            "date": "2012-05-05 19:58:32", 
+            "gravatar": "34fe9578c98748263731073b5013cb07", 
+            "id": "93c11053a731a17471dbb806eab6e6de57c658a6", 
+            "login": "pepite", 
+            "message": "added group validation and a sample app that demonstrates their usage", 
+            "parents": [
+                [
+                    "efbbbda9e909c0c96a707ce3a2a16d0bcf9517fa", 
+                    1949, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1957
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-05 19:58:44", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "9c63c674e3440cf1e312afeea016b7cbf78e1e7d", 
+            "login": "julienrf", 
+            "message": "Add Promise.throwing(new RuntimeException()) in Java API", 
+            "parents": [
+                [
+                    "93c11053a731a17471dbb806eab6e6de57c658a6", 
+                    1957, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1958
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-06 06:52:26", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "14656b312faae11fdbb23eed6481a6b893ac0efc", 
+            "login": "kevinbosman", 
+            "message": "cater for running on Windows with spaces in path", 
+            "parents": [
+                [
+                    "9c63c674e3440cf1e312afeea016b7cbf78e1e7d", 
+                    1958, 
+                    0
+                ]
+            ], 
+            "space": 2, 
+            "time": 1959
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-06 06:56:25", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "d4bd1409f1223b4f211ad284c1285d2520a71766", 
+            "login": "kevinbosman", 
+            "message": "allow for overriding default ebean startup config", 
+            "parents": [
+                [
+                    "9c63c674e3440cf1e312afeea016b7cbf78e1e7d", 
+                    1958, 
+                    0
+                ]
+            ], 
+            "space": 65, 
+            "time": 1960
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-07 01:22:04", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "dc5cc3706eba95e2b177eeb8c545dc236f7ca361", 
+            "login": "guillaumebort", 
+            "message": "Stack Http.Context when propagating to Asynchronous callbacks.", 
+            "parents": [
+                [
+                    "9c63c674e3440cf1e312afeea016b7cbf78e1e7d", 
+                    1958, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1961
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 03:50:51", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "9d96db4d90393a168f6ac15546a6fc27bb198e6a", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo os t\u00edtulos do README para ptBR.", 
+            "parents": [
+                [
+                    "539efa8b70a2b7a3f6c63b0e48ef86958dcef05e", 
+                    1924, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1962
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 03:53:54", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "4d2cc464bef3b00125ee2508cbd308ecc7080a95", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo os textos para ptBR. @sedir depois d\u00e1 uma revisada ok?!", 
+            "parents": [
+                [
+                    "9d96db4d90393a168f6ac15546a6fc27bb198e6a", 
+                    1962, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1963
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-07 04:39:54", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "20a1fd49cfc5b271a0ad66c61db27d30039af127", 
+            "login": "pk11", 
+            "message": "upgrade sbt first to sbt 0.11.3 (getting rid of scala-tools)", 
+            "parents": [
+                [
+                    "96f9a3702fc16ed30a0c9a1fcb9c9063f1b88e98", 
+                    1947, 
+                    0
+                ]
+            ], 
+            "space": 6, 
+            "time": 1964
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-07 04:53:12", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "5114990a2b886457e57aad6b5c4e5bcea0eb9691", 
+            "login": "pk11", 
+            "message": "Merge branch 'sbt0.11.3'", 
+            "parents": [
+                [
+                    "dc5cc3706eba95e2b177eeb8c545dc236f7ca361", 
+                    1961, 
+                    0
+                ], 
+                [
+                    "20a1fd49cfc5b271a0ad66c61db27d30039af127", 
+                    1964, 
+                    6
+                ]
+            ], 
+            "space": 0, 
+            "time": 1965
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-07 05:11:19", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "c7ff214bec02b2e7f090be404674a7514558e400", 
+            "login": "pk11", 
+            "message": "upgrade integration tests as well to sbt 0.11.3 (missed them the first time around", 
+            "parents": [
+                [
+                    "5114990a2b886457e57aad6b5c4e5bcea0eb9691", 
+                    1965, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1966
+        }, 
+        {
+            "author": "Christopher Dow", 
+            "date": "2012-05-07 05:50:56", 
+            "gravatar": "5f19bf303c2340034d14a72e95b225ec", 
+            "id": "a2e88cc8f79016e202c260fc5acff835294c6e20", 
+            "login": "cdow", 
+            "message": "Allow routing to inherited Java controller actions", 
+            "parents": [
+                [
+                    "c7ff214bec02b2e7f090be404674a7514558e400", 
+                    1966, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1967
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-07 06:38:33", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "344585895319616e11c70ce0146737580f28e092", 
+            "login": "pk11", 
+            "message": "add test for allowing routes to dispatch to inherited methods in Java controllers", 
+            "parents": [
+                [
+                    "a2e88cc8f79016e202c260fc5acff835294c6e20", 
+                    1967, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1968
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-07 08:28:43", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "74af3d3052efcc5f896436687a428a3c43017495", 
+            "login": "pk11", 
+            "message": "fix typos", 
+            "parents": [
+                [
+                    "344585895319616e11c70ce0146737580f28e092", 
+                    1968, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1969
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-07 08:35:56", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "455afcc58621ce4fc3fce5350c6b14c5d89edadc", 
+            "login": "pk11", 
+            "message": "Merge pull request #256 from tuxBurner/patch-1", 
+            "parents": [
+                [
+                    "74af3d3052efcc5f896436687a428a3c43017495", 
+                    1969, 
+                    0
+                ], 
+                [
+                    "5a07b84d46a4a88a4930d6ec91dec6283f305bb2", 
+                    1783, 
+                    3
+                ]
+            ], 
+            "space": 0, 
+            "time": 1970
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 10:35:52", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "10ff1459b5fcd9a43d26454c2914f78de1cbdca1", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo a parte incial do README.", 
+            "parents": [
+                [
+                    "4d2cc464bef3b00125ee2508cbd308ecc7080a95", 
+                    1963, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1971
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 10:42:12", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "ee17731368cb0a719be2cf54737367ce55817ae7", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo a parte de instala\u00e7\u00e3o.", 
+            "parents": [
+                [
+                    "10ff1459b5fcd9a43d26454c2914f78de1cbdca1", 
+                    1971, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1972
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 10:49:06", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "c8d5227dde1e5ad5e987feeb57bf79aaaeb6a523", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo a parte dos primeiros passos", 
+            "parents": [
+                [
+                    "ee17731368cb0a719be2cf54737367ce55817ae7", 
+                    1972, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1973
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 10:58:44", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "c5d7aeda43ce145882a45b1a47c1f7bc7d03383c", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo a parte de execu\u00e7\u00e3o das aplica\u00e7\u00f5es de exemplo.", 
+            "parents": [
+                [
+                    "c8d5227dde1e5ad5e987feeb57bf79aaaeb6a523", 
+                    1973, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1974
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 10:59:37", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "2c8a6cef2fd66b88ac16396541f047148200aa86", 
+            "login": "allysonbarros", 
+            "message": "Traduzindo a parte de execu\u00e7\u00e3o das aplica\u00e7\u00f5es de exemplo.", 
+            "parents": [
+                [
+                    "c5d7aeda43ce145882a45b1a47c1f7bc7d03383c", 
+                    1974, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1975
+        }, 
+        {
+            "author": "Allyson Barros", 
+            "date": "2012-05-07 11:50:56", 
+            "gravatar": "e4b08c261fddd8d1e037b50f16b111a5", 
+            "id": "780e9a6a2a6048483a81bb9ed0870a24fd8c924c", 
+            "login": "allysonbarros", 
+            "message": "-a", 
+            "parents": [
+                [
+                    "2c8a6cef2fd66b88ac16396541f047148200aa86", 
+                    1975, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 1976
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-07 12:35:39", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "bfbdaf918bf4fde2604b4bda405e5acd8f780f5f", 
+            "login": "julienrf", 
+            "message": "Remove PathBindable[Option]", 
+            "parents": [
+                [
+                    "455afcc58621ce4fc3fce5350c6b14c5d89edadc", 
+                    1970, 
+                    0
+                ]
+            ], 
+            "space": 6, 
+            "time": 1977
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-07 16:23:34", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "57e9280c50f1a74cf34a78d791ee11b74868c12f", 
+            "login": "sadache", 
+            "message": "Merge pull request #289 from julienrf/remove-pathbindable-option", 
+            "parents": [
+                [
+                    "455afcc58621ce4fc3fce5350c6b14c5d89edadc", 
+                    1970, 
+                    0
+                ], 
+                [
+                    "bfbdaf918bf4fde2604b4bda405e5acd8f780f5f", 
+                    1977, 
+                    6
+                ]
+            ], 
+            "space": 0, 
+            "time": 1978
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-08 06:08:19", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "7e41d0e7b4ea762c8728a85f980aeb159049c4fb", 
+            "login": "bjartek", 
+            "message": "refactored the code to fetch companies for the select box out from the view.", 
+            "parents": [
+                [
+                    "57e9280c50f1a74cf34a78d791ee11b74868c12f", 
+                    1978, 
+                    0
+                ]
+            ], 
+            "space": 3, 
+            "time": 1979
+        }, 
+        {
+            "author": "S\u00e9bastien RENAULT", 
+            "date": "2012-05-08 07:57:53", 
+            "gravatar": "9948409007b84f19e34b0891093d8113", 
+            "id": "35974f1cd680d48c654ae5981bf03b3a848718e0", 
+            "login": "srenault", 
+            "message": "Add asEither method to JsValue", 
+            "parents": [
+                [
+                    "9d2473f1782fdbc37d8eb418fa55daf68be9090d", 
+                    1882, 
+                    0
+                ]
+            ], 
+            "space": 58, 
+            "time": 1980
+        }, 
+        {
+            "author": "Pascal Voitot", 
+            "date": "2012-05-08 10:52:51", 
+            "gravatar": "bd7aac31ca2d4654a9c323fa57d93039", 
+            "id": "41dbe723d9e8571ae9fd2db5ec4c94257ed151e6", 
+            "login": "", 
+            "message": "added resource management & JsLens (enhanced from AGA play2 fork)", 
+            "parents": [
+                [
+                    "65ffb4e6125850477df56842595dd7ee06125e1a", 
+                    1811, 
+                    0
+                ]
+            ], 
+            "space": 66, 
+            "time": 1981
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-08 13:34:16", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "f979006a7e2c1c08ca56ee0bae67b5463ee099c1", 
+            "login": "sadache", 
+            "message": "refactorings and fixes in Iteratees", 
+            "parents": [
+                [
+                    "57e9280c50f1a74cf34a78d791ee11b74868c12f", 
+                    1978, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1982
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-08 14:27:35", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "18c153526361bd0cdf16f2ff6051edeb2e4af91a", 
+            "login": "sadache", 
+            "message": "moving Enumerator and Enumeratee to their own files", 
+            "parents": [
+                [
+                    "f979006a7e2c1c08ca56ee0bae67b5463ee099c1", 
+                    1982, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1983
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-08 15:02:29", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "7b6259dc62f0b96f415d643fdce3c613ba14ea05", 
+            "login": "sadache", 
+            "message": "added better fold method for Iteratee", 
+            "parents": [
+                [
+                    "18c153526361bd0cdf16f2ff6051edeb2e4af91a", 
+                    1983, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1984
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-08 20:19:45", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "ba58ec05d2c8aa47f5b1a2bf12cbc82dc899d631", 
+            "login": "pk11", 
+            "message": "adding some sleep time to integrationtest, hopefully it will fix the reoccuring CI failure", 
+            "parents": [
+                [
+                    "7b6259dc62f0b96f415d643fdce3c613ba14ea05", 
+                    1984, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1985
+        }, 
+        {
+            "author": "Derianto Kusuma", 
+            "date": "2012-05-08 21:04:31", 
+            "gravatar": "2577beda607f681e3f516b52bdc52752", 
+            "id": "630ff48459fdbe1c6342e233befb8c22e0d9b2e2", 
+            "login": "derianto", 
+            "message": "Update Messages class to allow static injection.", 
+            "parents": [
+                [
+                    "a8cda297d4b8e2cd0ab833ee659abdc7fc13ed23", 
+                    1827, 
+                    52
+                ]
+            ], 
+            "space": 53, 
+            "time": 1986
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-09 03:15:28", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "4849bc69afb9c537f01ee34fac380051197ff024", 
+            "login": "guillaumebort", 
+            "message": "Don't fail in propagating Http.Context when no Context exists in the current thread.", 
+            "parents": [
+                [
+                    "ba58ec05d2c8aa47f5b1a2bf12cbc82dc899d631", 
+                    1985, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1987
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-09 03:20:18", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "09af364df01dd32f5be1ee2f7179bd77e416504b", 
+            "login": "kevinbosman", 
+            "message": "unwrap both Result and Context for Java AsyncResult", 
+            "parents": [
+                [
+                    "4849bc69afb9c537f01ee34fac380051197ff024", 
+                    1987, 
+                    0
+                ]
+            ], 
+            "space": 6, 
+            "time": 1988
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-09 03:24:03", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "f1a9cee2c036735954ef34d504857e177bfe0bbe", 
+            "login": "kevinbosman", 
+            "message": "add an integration test for Java AsyncResult", 
+            "parents": [
+                [
+                    "09af364df01dd32f5be1ee2f7179bd77e416504b", 
+                    1988, 
+                    6
+                ]
+            ], 
+            "space": 6, 
+            "time": 1989
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-09 03:25:54", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "ac0627fd28867d4df1c8c94f8a70a77179140b6e", 
+            "login": "kevinbosman", 
+            "message": "set nested constraints when constructing Form Field", 
+            "parents": [
+                [
+                    "4849bc69afb9c537f01ee34fac380051197ff024", 
+                    1987, 
+                    0
+                ]
+            ], 
+            "space": 65, 
+            "time": 1990
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-09 03:25:54", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "d14920c6b702bf93113544496bc196467b28c530", 
+            "login": "kevinbosman", 
+            "message": "add an integration test for nested field constraints", 
+            "parents": [
+                [
+                    "ac0627fd28867d4df1c8c94f8a70a77179140b6e", 
+                    1990, 
+                    65
+                ]
+            ], 
+            "space": 65, 
+            "time": 1991
+        }, 
+        {
+            "author": "Nicolas Martignole", 
+            "date": "2012-05-09 03:50:57", 
+            "gravatar": "d5664166cd6782e0fdee69965e9248ed", 
+            "id": "dde8e75702d96475ca618961277ccf709a424369", 
+            "login": "nicmarti", 
+            "message": "Fix for bug Lighthouse-452, Evolution does not handle SQL script larger than 64kb.", 
+            "parents": [
+                [
+                    "455afcc58621ce4fc3fce5350c6b14c5d89edadc", 
+                    1970, 
+                    0
+                ]
+            ], 
+            "space": 59, 
+            "time": 1992
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-09 06:56:21", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "955cdc99739f8db85806c31ea235f996287087f2", 
+            "login": "pk11", 
+            "message": "Merge pull request #275 from leon/forms-jodadatetime", 
+            "parents": [
+                [
+                    "4849bc69afb9c537f01ee34fac380051197ff024", 
+                    1987, 
+                    0
+                ], 
+                [
+                    "5f3f345629846a9694509ce359ba75be9c9a755b", 
+                    1844, 
+                    8
+                ]
+            ], 
+            "space": 0, 
+            "time": 1993
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-09 07:07:20", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "0cd118681b1b02f66a873ab7bcaec703436162cf", 
+            "login": "pk11", 
+            "message": "Merge pull request #279 from julienrf/fix/405", 
+            "parents": [
+                [
+                    "955cdc99739f8db85806c31ea235f996287087f2", 
+                    1993, 
+                    0
+                ], 
+                [
+                    "5f4a1864f35702370d37a087ff927ae62fe23c27", 
+                    1883, 
+                    7
+                ]
+            ], 
+            "space": 0, 
+            "time": 1994
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-09 07:46:53", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "f22ed2561d796c87af02379cfc1dc2c82f923817", 
+            "login": "pk11", 
+            "message": "Merge pull request #283 from knuton/action-builder", 
+            "parents": [
+                [
+                    "0cd118681b1b02f66a873ab7bcaec703436162cf", 
+                    1994, 
+                    0
+                ], 
+                [
+                    "ecffcacef379c3c5896721d4346a6cd08cceb9e6", 
+                    1920, 
+                    4
+                ]
+            ], 
+            "space": 0, 
+            "time": 1995
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-09 08:48:58", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "2091678a343709c5d11509cd21e81765b74b23ed", 
+            "login": "sadache", 
+            "message": "some refactorings after introducing fold1 to an Iteratee", 
+            "parents": [
+                [
+                    "f22ed2561d796c87af02379cfc1dc2c82f923817", 
+                    1995, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 1996
+        }, 
+        {
+            "author": "Kevin Bosman", 
+            "date": "2012-05-09 12:27:59", 
+            "gravatar": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "id": "68a852d7e384c9faf53a4a5e4101c81fca4e043f", 
+            "login": "kevinbosman", 
+            "message": "call JavaHelpers.createResult() directly", 
+            "parents": [
+                [
+                    "f1a9cee2c036735954ef34d504857e177bfe0bbe", 
+                    1989, 
+                    6
+                ]
+            ], 
+            "space": 6, 
+            "time": 1997
+        }, 
+        {
+            "author": "Pablo Fernandez", 
+            "date": "2012-05-09 14:37:50", 
+            "gravatar": "99108829176dfbbc5d0bf3c041542a26", 
+            "id": "3b6982b42ec5f065a58278e2c291e5a24c51ccc7", 
+            "login": "fernandezpablo85", 
+            "message": "Allow AsyncResults in functional tests.", 
+            "parents": [
+                [
+                    "2091678a343709c5d11509cd21e81765b74b23ed", 
+                    1996, 
+                    0
+                ]
+            ], 
+            "space": 4, 
+            "time": 1998
+        }, 
+        {
+            "author": "jtournay", 
+            "date": "2012-05-09 15:01:49", 
+            "gravatar": "5ffea93680eb9d59a4e0c638872ddbab", 
+            "id": "dc6ae977a0ed9ecc734144dd5c9cdd1a3a9b2b81", 
+            "login": "", 
+            "message": "Merge branch 'master' of https://github.com/playframework/Play20", 
+            "parents": [
+                [
+                    "70591c3becce38b9efbf105089fbf4d6ffdfbaa1", 
+                    1946, 
+                    63
+                ], 
+                [
+                    "2091678a343709c5d11509cd21e81765b74b23ed", 
+                    1996, 
+                    0
+                ]
+            ], 
+            "space": 63, 
+            "time": 1999
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-10 01:52:43", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "6e06373856a0c17be8fb7eac368c934de2de7227", 
+            "login": "guillaumebort", 
+            "message": "Merge pull request #236 from kevinbosman/master", 
+            "parents": [
+                [
+                    "2091678a343709c5d11509cd21e81765b74b23ed", 
+                    1996, 
+                    0
+                ], 
+                [
+                    "68a852d7e384c9faf53a4a5e4101c81fca4e043f", 
+                    1997, 
+                    6
+                ]
+            ], 
+            "space": 0, 
+            "time": 2000
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-10 01:54:51", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "3c4c03847be48ecb78587718e5477ed092e7f0d0", 
+            "login": "guillaumebort", 
+            "message": "Merge pull request #202 from SimonChong/patch-1", 
+            "parents": [
+                [
+                    "6e06373856a0c17be8fb7eac368c934de2de7227", 
+                    2000, 
+                    0
+                ], 
+                [
+                    "364a0f2aeb568d22fc885667981ee0bf4453f3ba", 
+                    1369, 
+                    5
+                ]
+            ], 
+            "space": 0, 
+            "time": 2001
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-10 02:29:46", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "47ef3b011e39edd46518fdb5d8ceba6011a47a64", 
+            "login": "guillaumebort", 
+            "message": "Merge pull request #270 from kevinbosman/lh-308-space-path", 
+            "parents": [
+                [
+                    "3c4c03847be48ecb78587718e5477ed092e7f0d0", 
+                    2001, 
+                    0
+                ], 
+                [
+                    "14656b312faae11fdbb23eed6481a6b893ac0efc", 
+                    1959, 
+                    2
+                ]
+            ], 
+            "space": 0, 
+            "time": 2002
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-10 02:56:21", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "8b72f9dd60521500368b0f24db4b3937f69dbc47", 
+            "login": "guillaumebort", 
+            "message": "Add QueryString helpers to get the first value for a given key (simple case)", 
+            "parents": [
+                [
+                    "47ef3b011e39edd46518fdb5d8ceba6011a47a64", 
+                    2002, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2003
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-10 03:35:20", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "8cf5fbde78b8a6fc646c9fb3f43591cb152af8d8", 
+            "login": "julienrf", 
+            "message": "Add a helper to url-encode in templates", 
+            "parents": [
+                [
+                    "8b72f9dd60521500368b0f24db4b3937f69dbc47", 
+                    2003, 
+                    0
+                ]
+            ], 
+            "space": 2, 
+            "time": 2004
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-10 05:23:34", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "ed57ad652b43b4e6a58922db072a0ed321fe0065", 
+            "login": "pk11", 
+            "message": "Merge pull request #290 from bjartek/master", 
+            "parents": [
+                [
+                    "8b72f9dd60521500368b0f24db4b3937f69dbc47", 
+                    2003, 
+                    0
+                ], 
+                [
+                    "7e41d0e7b4ea762c8728a85f980aeb159049c4fb", 
+                    1979, 
+                    3
+                ]
+            ], 
+            "space": 0, 
+            "time": 2005
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-10 05:39:32", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "1eaf79b7f7f7dc7a39d73096b98768773ab8bd4b", 
+            "login": "pk11", 
+            "message": "Merge pull request #294 from julienrf/feature/439-template-urlencode-helper2", 
+            "parents": [
+                [
+                    "ed57ad652b43b4e6a58922db072a0ed321fe0065", 
+                    2005, 
+                    0
+                ], 
+                [
+                    "8cf5fbde78b8a6fc646c9fb3f43591cb152af8d8", 
+                    2004, 
+                    2
+                ]
+            ], 
+            "space": 0, 
+            "time": 2006
+        }, 
+        {
+            "author": "S\u00e9bastien RENAULT", 
+            "date": "2012-05-10 06:02:06", 
+            "gravatar": "9948409007b84f19e34b0891093d8113", 
+            "id": "4748e456fb6f8dea9a366b68a71247386bbcf500", 
+            "login": "srenault", 
+            "message": "[#261] merge add queryString double/float binders and path double/float binders", 
+            "parents": [
+                [
+                    "1eaf79b7f7f7dc7a39d73096b98768773ab8bd4b", 
+                    2006, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2007
+        }, 
+        {
+            "author": "Kato Kazuyoshi", 
+            "date": "2012-05-10 06:09:38", 
+            "gravatar": "7828b45f8396aa361d85cead01fd99ca", 
+            "id": "c1ca1aa93bf44dccc316114715ab829f4d28e4c1", 
+            "login": "kzys", 
+            "message": "Add commons-lang3 instead of commons-lang", 
+            "parents": [
+                [
+                    "4748e456fb6f8dea9a366b68a71247386bbcf500", 
+                    2007, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2008
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-10 06:36:17", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+            "login": "pk11", 
+            "message": "fix regression in forms sample app", 
+            "parents": [
+                [
+                    "c1ca1aa93bf44dccc316114715ab829f4d28e4c1", 
+                    2008, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2009
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-10 12:23:11", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "29aacea79b4be9e1059019c61dd40971ce528ff6", 
+            "login": "joscha", 
+            "message": "Add textmate-style link to devError page", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 44, 
+            "time": 2010
+        }, 
+        {
+            "author": "Jim Frenette", 
+            "date": "2012-05-10 13:16:56", 
+            "gravatar": "98263f6f2855a95d08f4854440fe460a", 
+            "id": "f9acc7dbc8eb871ea978d6a95075d1f321ba79de", 
+            "login": "freneticpixel", 
+            "message": "Merge remote-tracking branch 'upstream/master'", 
+            "parents": [
+                [
+                    "e6ddf5cd13f57eeb1557163f7ceca0a4c0b4a379", 
+                    1864, 
+                    61
+                ], 
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 61, 
+            "time": 2011
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-10 15:03:28", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+            "login": "sadache", 
+            "message": "fixes take, Enumerator() and interleave", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2012
+        }, 
+        {
+            "author": "Derianto Kusuma", 
+            "date": "2012-05-11 03:16:45", 
+            "gravatar": "2577beda607f681e3f516b52bdc52752", 
+            "id": "b1606e88bafb28cf052b29799789a041ad0ea467", 
+            "login": "derianto", 
+            "message": "Repair controller annotation execution order: Class annotations first, then", 
+            "parents": [
+                [
+                    "630ff48459fdbe1c6342e233befb8c22e0d9b2e2", 
+                    1986, 
+                    53
+                ]
+            ], 
+            "space": 53, 
+            "time": 2013
+        }, 
+        {
+            "author": "Yves Mathieu", 
+            "date": "2012-05-11 03:49:53", 
+            "gravatar": "dbe496ea3044f4cbfb76cc9bc1e75c87", 
+            "id": "81e099d9c887c2e7042bfe5466d18c4a2493ae26", 
+            "login": "", 
+            "message": "Fix Enumeratee.take", 
+            "parents": [
+                [
+                    "9f1d9e9c98d4fac9d526601be854342ecd1ab0ef", 
+                    1879, 
+                    13
+                ]
+            ], 
+            "space": 41, 
+            "time": 2014
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-11 03:55:25", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "0da5b62a892f4468cbf737a2151dcf50f238eb9e", 
+            "login": "ornicar", 
+            "message": "Add deploy scripts", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2015
+        }, 
+        {
+            "author": "Leon", 
+            "date": "2012-05-11 04:46:00", 
+            "gravatar": "b578cab63498aaae9a7277f62af1adcc", 
+            "id": "6c5bcdb7f4081f8ceb041a1603fb5d91ac7b8367", 
+            "login": "leon", 
+            "message": "Added mime types for .eot and .woff", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 11, 
+            "time": 2016
+        }, 
+        {
+            "author": "Mathilde Lemee", 
+            "date": "2012-05-11 04:46:53", 
+            "gravatar": "c27a1294054155811ec499d013e113a4", 
+            "id": "6fa9960d5a62b9cdf59b6ede9077cb33b512492c", 
+            "login": "MathildeLemee", 
+            "message": "0.6.0 for fluentlenium", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 60, 
+            "time": 2017
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-11 05:01:42", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "d047cea132452227584bfaa6e0f7310e15eeecd7", 
+            "login": "ornicar", 
+            "message": "Hack netty server bootstrap", 
+            "parents": [
+                [
+                    "0da5b62a892f4468cbf737a2151dcf50f238eb9e", 
+                    2015, 
+                    27
+                ]
+            ], 
+            "space": 27, 
+            "time": 2018
+        }, 
+        {
+            "author": "Yves Mathieu", 
+            "date": "2012-05-11 06:56:14", 
+            "gravatar": "dbe496ea3044f4cbfb76cc9bc1e75c87", 
+            "id": "3b427a0ab968f8c26f09726cd805d518e2d08d45", 
+            "login": "", 
+            "message": "Add Enumerator.generateM from v2.1", 
+            "parents": [
+                [
+                    "81e099d9c887c2e7042bfe5466d18c4a2493ae26", 
+                    2014, 
+                    41
+                ]
+            ], 
+            "space": 41, 
+            "time": 2019
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-11 08:34:53", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "3d1d55efed727258fa6a4663cd3ce1d3e9122774", 
+            "login": "jroper", 
+            "message": "Provided methods to get the response as a stream, as a byte array, and provided access to the final URI that was visited", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 10, 
+            "time": 2020
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 14:40:43", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "9c872e649e09cc878f1714369cdc660a586e8026", 
+            "login": "bjartek", 
+            "message": "initial commit, copy of JDBC version", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 42, 
+            "time": 2021
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 14:41:42", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "62c01ebb68f121844dfa8c6866981e2b60745c26", 
+            "login": "bjartek", 
+            "message": "updated README", 
+            "parents": [
+                [
+                    "9c872e649e09cc878f1714369cdc660a586e8026", 
+                    2021, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2022
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 14:44:55", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "e9e51d0af6323ae88e8c16e83a3f93ef2eca9357", 
+            "login": "bjartek", 
+            "message": "configured mongodb and removed database configuration", 
+            "parents": [
+                [
+                    "62c01ebb68f121844dfa8c6866981e2b60745c26", 
+                    2022, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2023
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 14:56:27", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "c90c1cf0642e985b3fbda26bf289dd7b4bd8aa24", 
+            "login": "bjartek", 
+            "message": "removed old model and added the new mongo models", 
+            "parents": [
+                [
+                    "e9e51d0af6323ae88e8c16e83a3f93ef2eca9357", 
+                    2023, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2024
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 14:57:25", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "60f505265f0ea5056f11e0d19fcb7149776ff2e9", 
+            "login": "bjartek", 
+            "message": "configured routes", 
+            "parents": [
+                [
+                    "c90c1cf0642e985b3fbda26bf289dd7b4bd8aa24", 
+                    2024, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2025
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-11 15:02:36", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "af42d22cf5a7568ced1a7b584ec356898c766c23", 
+            "login": "pk11", 
+            "message": "[fixes #403] watch and reload plain module and sub-play project changes as well", 
+            "parents": [
+                [
+                    "8cbc8994232e65c23374fefcc5a0581234e643f2", 
+                    2012, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2026
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 15:09:16", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "62824794afaeb73e66f284d3030f72ceb67c966c", 
+            "login": "bjartek", 
+            "message": "fixed views and controller", 
+            "parents": [
+                [
+                    "60f505265f0ea5056f11e0d19fcb7149776ff2e9", 
+                    2025, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2027
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 15:12:06", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "db04f66d6fa7723251abef6b3e2b57ffd63fcfed", 
+            "login": "bjartek", 
+            "message": "added import of data if no data present", 
+            "parents": [
+                [
+                    "62824794afaeb73e66f284d3030f72ceb67c966c", 
+                    2027, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2028
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-11 15:18:21", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "c790e97a9cb5b329353ff984c1841460c389894b", 
+            "login": "bjartek", 
+            "message": "fixed tests and slight error in model", 
+            "parents": [
+                [
+                    "db04f66d6fa7723251abef6b3e2b57ffd63fcfed", 
+                    2028, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2029
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-12 02:07:12", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "4af7613e8ecbc2068c799a01aaf0241f97d46855", 
+            "login": "bjartek", 
+            "message": "found that the plugin already has the Format binders, just had to look for them", 
+            "parents": [
+                [
+                    "c790e97a9cb5b329353ff984c1841460c389894b", 
+                    2029, 
+                    42
+                ]
+            ], 
+            "space": 42, 
+            "time": 2030
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-12 02:55:00", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "75e5aa972b0c8b7c031ee1a2bb043d269f7f42f9", 
+            "login": "ornicar", 
+            "message": "Merge branch 'master' of git://github.com/playframework/Play20 into master-tcp", 
+            "parents": [
+                [
+                    "d047cea132452227584bfaa6e0f7310e15eeecd7", 
+                    2018, 
+                    27
+                ], 
+                [
+                    "af42d22cf5a7568ced1a7b584ec356898c766c23", 
+                    2026, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2031
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-12 02:56:51", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "d62713c14c8ec4d1aa0ed080a29ff48bbf3c0cf7", 
+            "login": "julienrf", 
+            "message": "Handle fully qualified type names of querystring route parameters having a default value", 
+            "parents": [
+                [
+                    "af42d22cf5a7568ced1a7b584ec356898c766c23", 
+                    2026, 
+                    0
+                ]
+            ], 
+            "space": 9, 
+            "time": 2032
+        }, 
+        {
+            "author": "Paul Panserrieu", 
+            "date": "2012-05-12 05:09:21", 
+            "gravatar": "059f0f645f3cc01c1d2b6c17fe462f03", 
+            "id": "fdfae8139bac5047d1eeadfdcc9ec52a694dcaf2", 
+            "login": "peutetre", 
+            "message": "Merge branch '2.0-backports' of git://github.com/yma/Play20 into 2.0-backports", 
+            "parents": [
+                [
+                    "2f394b20463566cf8f39251663226d4722dfb352", 
+                    1292, 
+                    40
+                ], 
+                [
+                    "3b427a0ab968f8c26f09726cd805d518e2d08d45", 
+                    2019, 
+                    41
+                ]
+            ], 
+            "space": 40, 
+            "time": 2033
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-12 06:00:43", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+            "login": "pk11", 
+            "message": "Merge pull request #260 from analytically/master", 
+            "parents": [
+                [
+                    "af42d22cf5a7568ced1a7b584ec356898c766c23", 
+                    2026, 
+                    0
+                ], 
+                [
+                    "bdcdcc7be38bd2f057f17eb2483ffffb0f1c01a3", 
+                    1802, 
+                    1
+                ]
+            ], 
+            "space": 0, 
+            "time": 2034
+        }, 
+        {
+            "author": "S\u00e9bastien RENAULT", 
+            "date": "2012-05-12 08:28:21", 
+            "gravatar": "9948409007b84f19e34b0891093d8113", 
+            "id": "220e0c995a41b7d424dc4deadbbf27e70e3cb408", 
+            "login": "srenault", 
+            "message": "refactor PathBindable and QueryBindable", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 58, 
+            "time": 2035
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-12 11:29:42", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "2b389f9876334222514f71e6f14119a2d8505818", 
+            "login": "ornicar", 
+            "message": "Merge branch 'master' of git://github.com/playframework/Play20 into master-tcp", 
+            "parents": [
+                [
+                    "75e5aa972b0c8b7c031ee1a2bb043d269f7f42f9", 
+                    2031, 
+                    27
+                ], 
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2036
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-12 13:03:15", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "0ca2cc6d622c8bbf1d099ac3c41f9042a98fb727", 
+            "login": "julienrf", 
+            "message": "Routes parameters unboxing", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 8, 
+            "time": 2037
+        }, 
+        {
+            "author": "Tommy C. Li", 
+            "date": "2012-05-12 21:46:05", 
+            "gravatar": "37a3f70eb650a01b56e60ae703da1db4", 
+            "id": "af58e1be69add6179025d7ed94a180b85a3291cc", 
+            "login": "", 
+            "message": "[#462] BatchSql natively accepts collections. Fix quadratic time issue.", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 50, 
+            "time": 2038
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-13 05:41:43", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "c682058b4761e78d58b1c669f27096cf854aa981", 
+            "login": "ornicar", 
+            "message": "Fix netty server bootstrap configuration", 
+            "parents": [
+                [
+                    "2b389f9876334222514f71e6f14119a2d8505818", 
+                    2036, 
+                    27
+                ]
+            ], 
+            "space": 27, 
+            "time": 2039
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-13 05:41:53", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "76a5733315d67dbb0bebc5bf630fe5ea436e0f2e", 
+            "login": "ornicar", 
+            "message": "Use more JVM permanent memory", 
+            "parents": [
+                [
+                    "c682058b4761e78d58b1c669f27096cf854aa981", 
+                    2039, 
+                    27
+                ]
+            ], 
+            "space": 27, 
+            "time": 2040
+        }, 
+        {
+            "author": "Mathias Bogaert", 
+            "date": "2012-05-13 10:29:00", 
+            "gravatar": "08d76a0a112e498e55e5c55816d4853f", 
+            "id": "4852c3ddf15f1c881281b4378f71156ee1a453e2", 
+            "login": "analytically", 
+            "message": "Fix for #1484 and update Logback to 1.0.3.", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 7, 
+            "time": 2041
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-13 13:07:17", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "b9f9b9645753872c09895818e1a25289595c7ccb", 
+            "login": "jroper", 
+            "message": "Modified Java waitAll promise generics to be nicer with Java", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 6, 
+            "time": 2042
+        }, 
+        {
+            "author": "Jun Yamog", 
+            "date": "2012-05-14 01:49:27", 
+            "gravatar": "665f8116444ce5df7ad165c6c055e83a", 
+            "id": "9d8d257e01be5f433b35eef4247f0c473e89b696", 
+            "login": "jkyamog", 
+            "message": "add support for byte type column", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 56, 
+            "time": 2043
+        }, 
+        {
+            "author": "Leon Radley", 
+            "date": "2012-05-14 01:50:50", 
+            "gravatar": "b578cab63498aaae9a7277f62af1adcc", 
+            "id": "ac1c804c4b25b5a9840d8b335bb6dbc66436be6b", 
+            "login": "leon", 
+            "message": "unbinding jodaDate now works as expected", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 3, 
+            "time": 2044
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-14 14:30:44", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "10ef6824af6f182f3029db258636d907ef1652c6", 
+            "login": "pk11", 
+            "message": "[fixes lh 192 and 228] improve compilation error messages on the console in case of parsing errors", 
+            "parents": [
+                [
+                    "42751459e6ed3a468a078e24810dd59cbc3ab123", 
+                    2034, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2045
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-14 15:30:07", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+            "login": "sadache", 
+            "message": "refactoring and bug fixes", 
+            "parents": [
+                [
+                    "10ef6824af6f182f3029db258636d907ef1652c6", 
+                    2045, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2046
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-14 19:20:39", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "33b7961b54f5c9bdd84815aebea7d1188a25983b", 
+            "login": "", 
+            "message": "Configuration constructor to make working with Java Configuration object easier.", 
+            "parents": [
+                [
+                    "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+                    2046, 
+                    0
+                ]
+            ], 
+            "space": 5, 
+            "time": 2047
+        }, 
+        {
+            "author": "Anders Blockmar", 
+            "date": "2012-05-15 01:03:38", 
+            "gravatar": "f0a30b5b598564ae8b74fa4c7101d091", 
+            "id": "f0cff4a9b2dcd6391efd05efb835a388be217e8c", 
+            "login": "", 
+            "message": "Added support for pid-file-path. Ticket #445", 
+            "parents": [
+                [
+                    "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+                    2046, 
+                    0
+                ]
+            ], 
+            "space": 51, 
+            "time": 2048
+        }, 
+        {
+            "author": "Derianto Kusuma", 
+            "date": "2012-05-15 02:02:56", 
+            "gravatar": "2577beda607f681e3f516b52bdc52752", 
+            "id": "d7434e9c3d4b56ed914ab292fe01b51d2e035437", 
+            "login": "derianto", 
+            "message": "- Add new API to controller, esp. encryptedSession map", 
+            "parents": [
+                [
+                    "b1606e88bafb28cf052b29799789a041ad0ea467", 
+                    2013, 
+                    53
+                ]
+            ], 
+            "space": 53, 
+            "time": 2049
+        }, 
+        {
+            "author": "Anders Blockmar", 
+            "date": "2012-05-15 02:43:29", 
+            "gravatar": "f0a30b5b598564ae8b74fa4c7101d091", 
+            "id": "f8ac39a4739ed154281bc571397aa57e56a8da2a", 
+            "login": "", 
+            "message": "Support for changing the name of the FLASH-cookie", 
+            "parents": [
+                [
+                    "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+                    2046, 
+                    0
+                ]
+            ], 
+            "space": 2, 
+            "time": 2050
+        }, 
+        {
+            "author": "Anders Blockmar", 
+            "date": "2012-05-15 04:02:40", 
+            "gravatar": "f0a30b5b598564ae8b74fa4c7101d091", 
+            "id": "263fea526249746af7cff7d8038dfc33f74d931c", 
+            "login": "", 
+            "message": "Support for setting pid-file path using system propertie.", 
+            "parents": [
+                [
+                    "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+                    2046, 
+                    0
+                ]
+            ], 
+            "space": 1, 
+            "time": 2051
+        }, 
+        {
+            "author": "Anders Blockmar", 
+            "date": "2012-05-15 04:13:05", 
+            "gravatar": "f0a30b5b598564ae8b74fa4c7101d091", 
+            "id": "013ada3a2a38538254aff1af1859dca8ad0187c0", 
+            "login": "", 
+            "message": "Revert \"Added support for pid-file-path. Ticket #445\"", 
+            "parents": [
+                [
+                    "f0cff4a9b2dcd6391efd05efb835a388be217e8c", 
+                    2048, 
+                    51
+                ]
+            ], 
+            "space": 51, 
+            "time": 2052
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 05:34:37", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "3065086fdb9de279d09af5a546a35b5e0ec51c82", 
+            "login": "pk11", 
+            "message": "[lh 415] expose the underlying WebDriver.Options interface via `TestBrowser#manage`", 
+            "parents": [
+                [
+                    "1052fbe74f90fbbadc5052261f59324f69ef1300", 
+                    2046, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2053
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 05:57:46", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "6f1a9e68b62f41ffee8d159fdb3c97d2812c64bc", 
+            "login": "pk11", 
+            "message": "small improvements to play.libs.F.Promise", 
+            "parents": [
+                [
+                    "9f1d9e9c98d4fac9d526601be854342ecd1ab0ef", 
+                    1879, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2054
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 05:58:02", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "d3d6ccd06e9f647efe27bbe0df9f4f53344d225d", 
+            "login": "sadache", 
+            "message": "waitAll for java", 
+            "parents": [
+                [
+                    "6f1a9e68b62f41ffee8d159fdb3c97d2812c64bc", 
+                    2054, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2055
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 05:58:14", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "b1c1067c3ad2f061c1015db38def60641e570416", 
+            "login": "sadache", 
+            "message": "fix sequence", 
+            "parents": [
+                [
+                    "d3d6ccd06e9f647efe27bbe0df9f4f53344d225d", 
+                    2055, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2056
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 05:58:28", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "0bb8c573333d93a653fd1c5dc26a609ae56525ad", 
+            "login": "sadache", 
+            "message": "added recover method to promise", 
+            "parents": [
+                [
+                    "b1c1067c3ad2f061c1015db38def60641e570416", 
+                    2056, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2057
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 05:58:38", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "2451446cba110866d34281397d73dd32242fb33c", 
+            "login": "julienrf", 
+            "message": "Fix unchecked cast in play.libs.F.Promise.waitAll", 
+            "parents": [
+                [
+                    "0bb8c573333d93a653fd1c5dc26a609ae56525ad", 
+                    2057, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2058
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-15 05:59:33", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "f8658020d5d5ad9e91ec3649427dc923b4baf004", 
+            "login": "jroper", 
+            "message": "Fully documented the Java Functional helpers", 
+            "parents": [
+                [
+                    "2451446cba110866d34281397d73dd32242fb33c", 
+                    2058, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2059
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-15 05:59:49", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "50cddac5b3a0ca173ac3c93868a87c78caa93a08", 
+            "login": "jroper", 
+            "message": "Removed question in map comments", 
+            "parents": [
+                [
+                    "f8658020d5d5ad9e91ec3649427dc923b4baf004", 
+                    2059, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2060
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-15 06:00:03", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "4c73b6b912cef1e7e2ca734fb16d9987dd285242", 
+            "login": "jroper", 
+            "message": "Fixed lost exception cause in Option.map", 
+            "parents": [
+                [
+                    "50cddac5b3a0ca173ac3c93868a87c78caa93a08", 
+                    2060, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2061
+        }, 
+        {
+            "author": "James Roper", 
+            "date": "2012-05-15 06:00:17", 
+            "gravatar": "adcaeca14222cc5c295db159e1bade6f", 
+            "id": "0ebcb5ea51ff8f331a5c65f35a02c41f642e1e5b", 
+            "login": "jroper", 
+            "message": "Added constructor to Java promise for creating a pure promise", 
+            "parents": [
+                [
+                    "4c73b6b912cef1e7e2ca734fb16d9987dd285242", 
+                    2061, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2062
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:00:32", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "81d102ae83e3cfb92e695d78b82dbff720e361db", 
+            "login": "julienrf", 
+            "message": "Fix compilation error of Java Promise.pure", 
+            "parents": [
+                [
+                    "0ebcb5ea51ff8f331a5c65f35a02c41f642e1e5b", 
+                    2062, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2063
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:03:00", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "5a0997fef8c44ac1fa249fcebcd0e1ed538bfbc7", 
+            "login": "julienrf", 
+            "message": "Suppress unchecked cast warning", 
+            "parents": [
+                [
+                    "81d102ae83e3cfb92e695d78b82dbff720e361db", 
+                    2063, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2064
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:04:17", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "8abfa1ba27ea08bd49b0fccddd48f29a8ae7b998", 
+            "login": "julienrf", 
+            "message": "Provide a shorthand to retrieve the Http.Context from templates", 
+            "parents": [
+                [
+                    "5a0997fef8c44ac1fa249fcebcd0e1ed538bfbc7", 
+                    2064, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2065
+        }, 
+        {
+            "author": "Erwan Loisant", 
+            "date": "2012-05-15 06:07:33", 
+            "gravatar": "df2d6f1d39a958e46c75e61d4ebb43af", 
+            "id": "f3e7786eab0d0c0320d95c4cb2bfbc44f189b77a", 
+            "login": "erwan", 
+            "message": "Session: make maxAge, cookie name and secure flag configurable", 
+            "parents": [
+                [
+                    "8abfa1ba27ea08bd49b0fccddd48f29a8ae7b998", 
+                    2065, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2066
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 06:08:12", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "76641dc8a09a1f2193218c49632b1f07be6682a8", 
+            "login": "pk11", 
+            "message": "fix build", 
+            "parents": [
+                [
+                    "f3e7786eab0d0c0320d95c4cb2bfbc44f189b77a", 
+                    2066, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2067
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 06:08:23", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "8cb766a94ab483e74f1ad7a31d8ebd311fa7c440", 
+            "login": "pk11", 
+            "message": "simplify running app access in Session based on @guillaumebort's comment", 
+            "parents": [
+                [
+                    "76641dc8a09a1f2193218c49632b1f07be6682a8", 
+                    2067, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2068
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:16:33", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "730386952e35f6dd03e38de14d789308d2fc5758", 
+            "login": "julienrf", 
+            "message": "Remove cast", 
+            "parents": [
+                [
+                    "8cb766a94ab483e74f1ad7a31d8ebd311fa7c440", 
+                    2068, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2069
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:18:31", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "b0e00317a49282a125c8207f3189e71336ea9a86", 
+            "login": "julienrf", 
+            "message": "Add parenthesis to side-effecting methods", 
+            "parents": [
+                [
+                    "730386952e35f6dd03e38de14d789308d2fc5758", 
+                    2069, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2070
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 06:20:05", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "c33e7966c56f43c2dadfb29c8c6c2599c1157193", 
+            "login": "pk11", 
+            "message": "fix root logger in empty skeleton [fixes #194]", 
+            "parents": [
+                [
+                    "b0e00317a49282a125c8207f3189e71336ea9a86", 
+                    2070, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2071
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 06:20:22", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "e04a1d64cf1de93fac50bbbb243111b8c5606675", 
+            "login": "julienrf", 
+            "message": "Support ISO-3166 numeric languages", 
+            "parents": [
+                [
+                    "c33e7966c56f43c2dadfb29c8c6c2599c1157193", 
+                    2071, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2072
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 06:32:02", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "e7b8cfaaa44b129b650a5c512a57d1f3e3a391b0", 
+            "login": "sadache", 
+            "message": "fixes orTimeout for Promise", 
+            "parents": [
+                [
+                    "3065086fdb9de279d09af5a546a35b5e0ec51c82", 
+                    2053, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2073
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 06:45:06", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "fde729b06702641d149fbf608940fa57db4b4760", 
+            "login": "sadache", 
+            "message": "fix orTimeout on promises", 
+            "parents": [
+                [
+                    "e04a1d64cf1de93fac50bbbb243111b8c5606675", 
+                    2072, 
+                    13
+                ]
+            ], 
+            "space": 12, 
+            "time": 2074
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 06:55:42", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "0ef745e9ec88c282da887c993701897754c052c3", 
+            "login": "sadache", 
+            "message": "Merge pull request #160 from freekh/promise-sequence-fixes", 
+            "parents": [
+                [
+                    "e04a1d64cf1de93fac50bbbb243111b8c5606675", 
+                    2072, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2075
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 06:58:00", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "ec4b2f25c8b36fdb0045956b2bd20c7c700c4c59", 
+            "login": "pk11", 
+            "message": "Merge branch 'cleaning' of https://github.com/julienrf/Play20 into housecleaning", 
+            "parents": [
+                [
+                    "0ef745e9ec88c282da887c993701897754c052c3", 
+                    2075, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2076
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 06:59:45", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "050fb7bb9224845a4adbd3bb3e2aa1f649981c1b", 
+            "login": "pk11", 
+            "message": "Merge branch '2.0.x' of github.com:playframework/Play20 into 2.0.x", 
+            "parents": [
+                [
+                    "ec4b2f25c8b36fdb0045956b2bd20c7c700c4c59", 
+                    2076, 
+                    13
+                ], 
+                [
+                    "fde729b06702641d149fbf608940fa57db4b4760", 
+                    2074, 
+                    12
+                ]
+            ], 
+            "space": 13, 
+            "time": 2077
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 07:16:19", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "63382cdf335be4887fc7d2400673f585ba3c3cf1", 
+            "login": "julienrf", 
+            "message": "merge", 
+            "parents": [
+                [
+                    "050fb7bb9224845a4adbd3bb3e2aa1f649981c1b", 
+                    2077, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2078
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 07:20:52", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "92bbb7d18be14b256aeb5468f447264923751840", 
+            "login": "julienrf", 
+            "message": "merge", 
+            "parents": [
+                [
+                    "63382cdf335be4887fc7d2400673f585ba3c3cf1", 
+                    2078, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2079
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 07:39:41", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "11d451f849545b851e013ea55ab0850481693626", 
+            "login": "pk11", 
+            "message": "getting rid of a bunch of warnings", 
+            "parents": [
+                [
+                    "92bbb7d18be14b256aeb5468f447264923751840", 
+                    2079, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2080
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-15 07:39:58", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "8a126b5c2202245db5fc14a87f5d6a3315682a20", 
+            "login": "guillaumebort", 
+            "message": "Merge pull request #103 from athieriot/fakesession", 
+            "parents": [
+                [
+                    "11d451f849545b851e013ea55ab0850481693626", 
+                    2080, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2081
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-15 07:40:23", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "8ea2cb2486756d8bc7918241391a6851fc05c145", 
+            "login": "pk11", 
+            "message": "merge session test changes with flash and cookie support", 
+            "parents": [
+                [
+                    "8a126b5c2202245db5fc14a87f5d6a3315682a20", 
+                    2081, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2082
+        }, 
+        {
+            "author": "Clement Escoffier", 
+            "date": "2012-05-15 07:40:44", 
+            "gravatar": "ab937f7df990a673446f1e30fd9ccfba", 
+            "id": "bbf53139a5e5790128cb45183b3f38a7c47b2bbd", 
+            "login": "cescoffier", 
+            "message": "#310 - Added withJsonBody support to the FakeRequest", 
+            "parents": [
+                [
+                    "8ea2cb2486756d8bc7918241391a6851fc05c145", 
+                    2082, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2083
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-15 07:46:11", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "8b43f45cc3aeac082327bc53b2631db630fdbbc1", 
+            "login": "julienrf", 
+            "message": "merge remote address support", 
+            "parents": [
+                [
+                    "bbf53139a5e5790128cb45183b3f38a7c47b2bbd", 
+                    2083, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2084
+        }, 
+        {
+            "author": "jtournay", 
+            "date": "2012-05-15 07:47:56", 
+            "gravatar": "5ffea93680eb9d59a4e0c638872ddbab", 
+            "id": "af4186185a552e67764028d796892230de09e6d0", 
+            "login": "", 
+            "message": "#374 Create a RequestHeader for the Java API, and pass it in Global methods", 
+            "parents": [
+                [
+                    "8b43f45cc3aeac082327bc53b2631db630fdbbc1", 
+                    2084, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2085
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 12:17:26", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "2fcc284dbf04b0fd7e92c4e549175a33e73105aa", 
+            "login": "sadache", 
+            "message": "interleave a list on Enumerators", 
+            "parents": [
+                [
+                    "e7b8cfaaa44b129b650a5c512a57d1f3e3a391b0", 
+                    2073, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2086
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-15 12:31:48", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "e136cfee17abd14fd4ad0e0d2c0e009496cad448", 
+            "login": "guillaumebort", 
+            "message": "Merge pull request #293 from fernandezpablo85/master", 
+            "parents": [
+                [
+                    "2fcc284dbf04b0fd7e92c4e549175a33e73105aa", 
+                    2086, 
+                    0
+                ], 
+                [
+                    "3b6982b42ec5f065a58278e2c291e5a24c51ccc7", 
+                    1998, 
+                    4
+                ]
+            ], 
+            "space": 0, 
+            "time": 2087
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 14:43:25", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "e0695c95fa01752cad64a6b340408cae1b6457e1", 
+            "login": "sadache", 
+            "message": "Checkdone Enumeratee for shared semantics for drop and takeWhile", 
+            "parents": [
+                [
+                    "e136cfee17abd14fd4ad0e0d2c0e009496cad448", 
+                    2087, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2088
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-15 15:18:48", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "aa5c5017f734710afb2d486200fa79c1f69b4e25", 
+            "login": "sadache", 
+            "message": "Enumeratee.dropWhile", 
+            "parents": [
+                [
+                    "e0695c95fa01752cad64a6b340408cae1b6457e1", 
+                    2088, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2089
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-15 15:24:56", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "054ca6df3906bdcdc9bbeacd4a25ce28e397e8b4", 
+            "login": "ornicar", 
+            "message": "Merge branch 'master' of git://github.com/playframework/Play20 into master-tcp", 
+            "parents": [
+                [
+                    "76a5733315d67dbb0bebc5bf630fe5ea436e0f2e", 
+                    2040, 
+                    27
+                ], 
+                [
+                    "aa5c5017f734710afb2d486200fa79c1f69b4e25", 
+                    2089, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2090
+        }, 
+        {
+            "author": "Nilanjan Raychaudhuri", 
+            "date": "2012-05-15 18:03:02", 
+            "gravatar": "13a98298bb14a7b5b06be2b7d9fe042f", 
+            "id": "b54ad7027b1532def332aff710df6416d04bdcba", 
+            "login": "nraychaudhuri", 
+            "message": "session.httpOnly is now configurable", 
+            "parents": [
+                [
+                    "aa5c5017f734710afb2d486200fa79c1f69b4e25", 
+                    2089, 
+                    0
+                ]
+            ], 
+            "space": 4, 
+            "time": 2091
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:33:35", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "22dbcfebe7d0bd99f1b8600e2a4e564bbd54f9a9", 
+            "login": "pk11", 
+            "message": "Merge pull request #298 from leon/webfont-mimetypes", 
+            "parents": [
+                [
+                    "aa5c5017f734710afb2d486200fa79c1f69b4e25", 
+                    2089, 
+                    0
+                ], 
+                [
+                    "6c5bcdb7f4081f8ceb041a1603fb5d91ac7b8367", 
+                    2016, 
+                    11
+                ]
+            ], 
+            "space": 0, 
+            "time": 2092
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:35:34", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "0f9b019dc5679d61d82fffab909d273b31d45426", 
+            "login": "pk11", 
+            "message": "Merge pull request #300 from vznet/jroper/java-response-additions", 
+            "parents": [
+                [
+                    "22dbcfebe7d0bd99f1b8600e2a4e564bbd54f9a9", 
+                    2092, 
+                    0
+                ], 
+                [
+                    "3d1d55efed727258fa6a4663cd3ce1d3e9122774", 
+                    2020, 
+                    10
+                ]
+            ], 
+            "space": 0, 
+            "time": 2093
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:37:01", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "7c819302e110a61949c7def8c08ee4b816c98182", 
+            "login": "pk11", 
+            "message": "Merge pull request #301 from julienrf/fix/447", 
+            "parents": [
+                [
+                    "0f9b019dc5679d61d82fffab909d273b31d45426", 
+                    2093, 
+                    0
+                ], 
+                [
+                    "d62713c14c8ec4d1aa0ed080a29ff48bbf3c0cf7", 
+                    2032, 
+                    9
+                ]
+            ], 
+            "space": 0, 
+            "time": 2094
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:42:46", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "4b1aae6e31dd339a44ad6307ada9f4f1b660618e", 
+            "login": "pk11", 
+            "message": "Merge pull request #304 from julienrf/fix/282", 
+            "parents": [
+                [
+                    "7c819302e110a61949c7def8c08ee4b816c98182", 
+                    2094, 
+                    0
+                ], 
+                [
+                    "0ca2cc6d622c8bbf1d099ac3c41f9042a98fb727", 
+                    2037, 
+                    8
+                ]
+            ], 
+            "space": 0, 
+            "time": 2095
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:51:59", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "05ae740d6f744eeac4b90be80db51842ad58743e", 
+            "login": "pk11", 
+            "message": "Merge pull request #306 from analytically/patch-1", 
+            "parents": [
+                [
+                    "4b1aae6e31dd339a44ad6307ada9f4f1b660618e", 
+                    2095, 
+                    0
+                ], 
+                [
+                    "4852c3ddf15f1c881281b4378f71156ee1a453e2", 
+                    2041, 
+                    7
+                ]
+            ], 
+            "space": 0, 
+            "time": 2096
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:53:11", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "ef8f9fdb9c3b04129e5f3e817395b7ac68ddc7e5", 
+            "login": "pk11", 
+            "message": "Merge pull request #307 from vznet/jroper/promise-generics-improvement", 
+            "parents": [
+                [
+                    "05ae740d6f744eeac4b90be80db51842ad58743e", 
+                    2096, 
+                    0
+                ], 
+                [
+                    "b9f9b9645753872c09895818e1a25289595c7ccb", 
+                    2042, 
+                    6
+                ]
+            ], 
+            "space": 0, 
+            "time": 2097
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 06:58:48", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "d45c0744517d1884c6386ed85e88e73fadff6d07", 
+            "login": "pk11", 
+            "message": "Merge pull request #310 from benmccann/config", 
+            "parents": [
+                [
+                    "ef8f9fdb9c3b04129e5f3e817395b7ac68ddc7e5", 
+                    2097, 
+                    0
+                ], 
+                [
+                    "33b7961b54f5c9bdd84815aebea7d1188a25983b", 
+                    2047, 
+                    5
+                ]
+            ], 
+            "space": 0, 
+            "time": 2098
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 07:03:22", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "c2f4703940c1cb9f2d52e5533b9847546dfae1ef", 
+            "login": "pk11", 
+            "message": "Merge pull request #314 from nraychaudhuri/make_session_httpOnly_configurable", 
+            "parents": [
+                [
+                    "d45c0744517d1884c6386ed85e88e73fadff6d07", 
+                    2098, 
+                    0
+                ], 
+                [
+                    "b54ad7027b1532def332aff710df6416d04bdcba", 
+                    2091, 
+                    4
+                ]
+            ], 
+            "space": 0, 
+            "time": 2099
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-16 07:12:50", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "5017026c037521b2b6fcf66361cbe43d64f14d4e", 
+            "login": "pk11", 
+            "message": "Merge pull request #297 from leon/forms-jodadatetime", 
+            "parents": [
+                [
+                    "c2f4703940c1cb9f2d52e5533b9847546dfae1ef", 
+                    2099, 
+                    0
+                ], 
+                [
+                    "ac1c804c4b25b5a9840d8b335bb6dbc66436be6b", 
+                    2044, 
+                    3
+                ]
+            ], 
+            "space": 0, 
+            "time": 2100
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-16 09:03:32", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "69e781539b5e19b348dce725834ebe5dcbef94b5", 
+            "login": "guillaumebort", 
+            "message": "Add useful meta-data to the default error page (file path and line).", 
+            "parents": [
+                [
+                    "5017026c037521b2b6fcf66361cbe43d64f14d4e", 
+                    2100, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2101
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-16 09:03:32", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "e8ff62bb77f4856a02ab39519d519322a4bcd2db", 
+            "login": "guillaumebort", 
+            "message": "Run sequentially all callback functions for a given Http.Context in the Java Promises API", 
+            "parents": [
+                [
+                    "69e781539b5e19b348dce725834ebe5dcbef94b5", 
+                    2101, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2102
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-16 09:03:32", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "9105629eab31aa0e4b3ce857772bc3690ee981c9", 
+            "login": "guillaumebort", 
+            "message": "Create a standalone actor system for the Promise sub-system. This way Promises doesn't depend of the main Play Invoker. Still need to check that everything can be configured simply.", 
+            "parents": [
+                [
+                    "e8ff62bb77f4856a02ab39519d519322a4bcd2db", 
+                    2102, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2103
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 10:18:32", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "ba3b02224627b2b1d7cfea0346ce0f6c7cb94450", 
+            "login": "joscha", 
+            "message": "Ticket #476", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 48, 
+            "time": 2104
+        }, 
+        {
+            "author": "Tommy C. Li", 
+            "date": "2012-05-16 10:23:09", 
+            "gravatar": "37a3f70eb650a01b56e60ae703da1db4", 
+            "id": "75bc64f52ad8e3a5ed03edf935da6ec34f6fbb58", 
+            "login": "", 
+            "message": "[#462] Add legacy methods back. Should be marked deprecated.", 
+            "parents": [
+                [
+                    "af58e1be69add6179025d7ed94a180b85a3291cc", 
+                    2038, 
+                    50
+                ]
+            ], 
+            "space": 50, 
+            "time": 2105
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 11:00:01", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "9fc1d9ee4d2eaf0e84990067c336f5ef0496918b", 
+            "login": "joscha", 
+            "message": "Fix for Ticket #472", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 47, 
+            "time": 2106
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 11:27:23", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "294858ac6320f2b4c81885083f40f7c86d705c44", 
+            "login": "joscha", 
+            "message": "Fix for Ticket #472, also encode key, according to rfc2388 and in sync to jQuery", 
+            "parents": [
+                [
+                    "9fc1d9ee4d2eaf0e84990067c336f5ef0496918b", 
+                    2106, 
+                    47
+                ]
+            ], 
+            "space": 47, 
+            "time": 2107
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-16 11:33:38", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "dd1596f109007d7a00e65351e44870efde0db702", 
+            "login": "ornicar", 
+            "message": "Merge branch 'master' of git://github.com/playframework/Play20 into master-tcp", 
+            "parents": [
+                [
+                    "054ca6df3906bdcdc9bbeacd4a25ce28e397e8b4", 
+                    2090, 
+                    27
+                ], 
+                [
+                    "9105629eab31aa0e4b3ce857772bc3690ee981c9", 
+                    2103, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2108
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-16 12:16:23", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "cf167e40f710adbcdd0a77b22452cff3e45447a0", 
+            "login": "sadache", 
+            "message": "Concurrent.broadcast and Enumeratee.filterNot", 
+            "parents": [
+                [
+                    "9105629eab31aa0e4b3ce857772bc3690ee981c9", 
+                    2103, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2109
+        }, 
+        {
+            "author": "Manuel Bernhardt", 
+            "date": "2012-05-16 12:39:51", 
+            "gravatar": "06156f543560f9fddcfdab87393ac816", 
+            "id": "dc90db8f76f2ef13e5dd982edb0ced480767720f", 
+            "login": "manuelbernhardt", 
+            "message": "[#470] Fixing a deadlock occuring when both SBT and the Application try to access the classloader at the same time", 
+            "parents": [
+                [
+                    "cf167e40f710adbcdd0a77b22452cff3e45447a0", 
+                    2109, 
+                    0
+                ]
+            ], 
+            "space": 49, 
+            "time": 2110
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-16 14:00:15", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "7b45f3f35d7cfb57994772a15a3abe14719f01c4", 
+            "login": "pk11", 
+            "message": "[fixes lh 406] make Promises' default timeout configurable", 
+            "parents": [
+                [
+                    "cf167e40f710adbcdd0a77b22452cff3e45447a0", 
+                    2109, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2111
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 14:14:29", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "cffc1a09f78e4eecbb573a3fb6159876cd85f042", 
+            "login": "joscha", 
+            "message": "Fix for Ticket #472, also encode key, according to rfc2388 and in sync to jQuery", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 46, 
+            "time": 2112
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 14:16:02", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "7f40a277fed6eb697fa662398c0eddaa1133e216", 
+            "login": "joscha", 
+            "message": "Merge branch 'encode_uri_components' of github.com:joscha/Play20 into encode_uri_components", 
+            "parents": [
+                [
+                    "cffc1a09f78e4eecbb573a3fb6159876cd85f042", 
+                    2112, 
+                    46
+                ], 
+                [
+                    "294858ac6320f2b4c81885083f40f7c86d705c44", 
+                    2107, 
+                    47
+                ]
+            ], 
+            "space": 46, 
+            "time": 2113
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 14:25:14", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "0361322552b8a92ee3de944444205fe6e3844a16", 
+            "login": "joscha", 
+            "message": "Fix for Ticket #472, also encode key, according to rfc2388 and in sync to jQuery", 
+            "parents": [
+                [
+                    "65664d87d4c0c02c2fa03344a66a0e7403b0c427", 
+                    2009, 
+                    0
+                ]
+            ], 
+            "space": 45, 
+            "time": 2114
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 14:26:28", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "2b0d1c35c8466fb6e717bef5bd2af0f2470c9e22", 
+            "login": "joscha", 
+            "message": "Merge branch 'encode_uri_components' of github.com:joscha/Play20 into encode_uri_components", 
+            "parents": [
+                [
+                    "0361322552b8a92ee3de944444205fe6e3844a16", 
+                    2114, 
+                    45
+                ], 
+                [
+                    "7f40a277fed6eb697fa662398c0eddaa1133e216", 
+                    2113, 
+                    46
+                ]
+            ], 
+            "space": 45, 
+            "time": 2115
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-16 14:59:12", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "8e353df149ff4f0d19e029d459bffe5111f54a03", 
+            "login": "julienrf", 
+            "message": "Fix javascriptUnbind method of some QueryStringBindable and PathBindable", 
+            "parents": [
+                [
+                    "cf167e40f710adbcdd0a77b22452cff3e45447a0", 
+                    2109, 
+                    0
+                ]
+            ], 
+            "space": 38, 
+            "time": 2116
+        }, 
+        {
+            "author": "Joscha Feth", 
+            "date": "2012-05-16 16:21:05", 
+            "gravatar": "3911f3dda74ddc708ea8f10566c0d8c3", 
+            "id": "b5754a236ab8193a71b975db702fe98fc1235a22", 
+            "login": "joscha", 
+            "message": "Fix for #472", 
+            "parents": [
+                [
+                    "7b45f3f35d7cfb57994772a15a3abe14719f01c4", 
+                    2111, 
+                    0
+                ]
+            ], 
+            "space": 44, 
+            "time": 2117
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-17 05:35:01", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "f1fb184ac3c376035f604c847832651927265718", 
+            "login": "julienrf", 
+            "message": "Fix default parameters support of javascript reverse router", 
+            "parents": [
+                [
+                    "7b45f3f35d7cfb57994772a15a3abe14719f01c4", 
+                    2111, 
+                    0
+                ]
+            ], 
+            "space": 37, 
+            "time": 2118
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-17 14:41:28", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "43b2663efc3839173fd61cf6082465def8570d16", 
+            "login": "pk11", 
+            "message": "Merge pull request #312 from blockmar/flashcookie-416", 
+            "parents": [
+                [
+                    "7b45f3f35d7cfb57994772a15a3abe14719f01c4", 
+                    2111, 
+                    0
+                ], 
+                [
+                    "f8ac39a4739ed154281bc571397aa57e56a8da2a", 
+                    2050, 
+                    2
+                ]
+            ], 
+            "space": 0, 
+            "time": 2119
+        }, 
+        {
+            "author": "Peter Hausel", 
+            "date": "2012-05-17 14:42:03", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76", 
+            "login": "pk11", 
+            "message": "Merge pull request #313 from blockmar/pidfile-445", 
+            "parents": [
+                [
+                    "43b2663efc3839173fd61cf6082465def8570d16", 
+                    2119, 
+                    0
+                ], 
+                [
+                    "263fea526249746af7cff7d8038dfc33f74d931c", 
+                    2051, 
+                    1
+                ]
+            ], 
+            "space": 0, 
+            "time": 2120
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-17 23:40:31", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "900fbf7495e3b2676ff4c6866f3027be1a944103", 
+            "login": "", 
+            "message": "Fix play startup script to allow for complex multi-project builds", 
+            "parents": [
+                [
+                    "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76", 
+                    2120, 
+                    0
+                ]
+            ], 
+            "space": 36, 
+            "time": 2121
+        }, 
+        {
+            "author": "Thibault Duplessis", 
+            "date": "2012-05-18 02:21:55", 
+            "gravatar": "197652601405656c383fc505dc185759", 
+            "id": "4d82519e580160f45f21e07fcc1076f53447298c", 
+            "login": "ornicar", 
+            "message": "Merge branch 'master' of git://github.com/playframework/Play20 into master-tcp", 
+            "parents": [
+                [
+                    "dd1596f109007d7a00e65351e44870efde0db702", 
+                    2108, 
+                    27
+                ], 
+                [
+                    "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76", 
+                    2120, 
+                    0
+                ]
+            ], 
+            "space": 27, 
+            "time": 2122
+        }, 
+        {
+            "author": "peter hausel", 
+            "date": "2012-05-18 07:00:14", 
+            "gravatar": "e98302802fb211bed73365b9ab809039", 
+            "id": "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+            "login": "pk11", 
+            "message": "add test for configuring promise timeout", 
+            "parents": [
+                [
+                    "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76", 
+                    2120, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2123
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-18 08:17:03", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "98aff0f86187fdd35398dc7a7934b9038461bb69", 
+            "login": "", 
+            "message": "Have the play script do a better check as to whether project is actually a play project.", 
+            "parents": [
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 36, 
+            "time": 2124
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-18 09:24:31", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "2959060f6ec7f911025fab0e3c2754e2f76772cb", 
+            "login": "", 
+            "message": "Update play.bat to check if plugins.sbt for play project validity", 
+            "parents": [
+                [
+                    "98aff0f86187fdd35398dc7a7934b9038461bb69", 
+                    2124, 
+                    36
+                ]
+            ], 
+            "space": 36, 
+            "time": 2125
+        }, 
+        {
+            "author": "Matthew Lawrence", 
+            "date": "2012-05-18 10:02:29", 
+            "gravatar": "6612dfa0f007a451d65c26ae123ec18c", 
+            "id": "c4878070b684c252830ac2cb8aac18c405f27c2d", 
+            "login": "", 
+            "message": "ETag header should use a quoted string.", 
+            "parents": [
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 43, 
+            "time": 2126
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-18 10:06:57", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "36828c531b4e15f157e99736fa16ceafebb5f18b", 
+            "login": "", 
+            "message": "Check to see if file exists before checking its contents", 
+            "parents": [
+                [
+                    "2959060f6ec7f911025fab0e3c2754e2f76772cb", 
+                    2125, 
+                    36
+                ]
+            ], 
+            "space": 36, 
+            "time": 2127
+        }, 
+        {
+            "author": "Bjarte Stien Karlsen", 
+            "date": "2012-05-19 03:54:42", 
+            "gravatar": "84f169f5b95f86c1929affb51f5e1007", 
+            "id": "1673a374e75057c92b54415cf8ccce53093aa77e", 
+            "login": "bjartek", 
+            "message": "Merge branch 'master' into computer-database-mongo", 
+            "parents": [
+                [
+                    "4af7613e8ecbc2068c799a01aaf0241f97d46855", 
+                    2030, 
+                    42
+                ], 
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 42, 
+            "time": 2128
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-19 08:36:02", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "1cd51587af13d4d6fb8ee4fb1d4a8482263f5ce1", 
+            "login": "julienrf", 
+            "message": "Allows to change the current Lang in Java API", 
+            "parents": [
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 37, 
+            "time": 2129
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-19 08:43:07", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "b2e4f55d2df4653c70c62a1454f7414cb5946c20", 
+            "login": "julienrf", 
+            "message": "Add RequestHeader#cookie (Java API)", 
+            "parents": [
+                [
+                    "1cd51587af13d4d6fb8ee4fb1d4a8482263f5ce1", 
+                    2129, 
+                    37
+                ]
+            ], 
+            "space": 37, 
+            "time": 2130
+        }, 
+        {
+            "author": "Paul Panserrieu", 
+            "date": "2012-05-20 11:20:01", 
+            "gravatar": "059f0f645f3cc01c1d2b6c17fe462f03", 
+            "id": "73d8a0ea30e171eed41efd58b81a38c5e954017f", 
+            "login": "peutetre", 
+            "message": "add a new skeleton with backbone.js", 
+            "parents": [
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 41, 
+            "time": 2131
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-21 00:37:50", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "3b239121a2b449324b68218d2806b33ce5aedd4c", 
+            "login": "sadache", 
+            "message": "more helper methods for iteratees", 
+            "parents": [
+                [
+                    "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+                    2123, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2132
+        }, 
+        {
+            "author": "Paul Panserrieu", 
+            "date": "2012-05-21 07:42:41", 
+            "gravatar": "059f0f645f3cc01c1d2b6c17fe462f03", 
+            "id": "7858a8708fa8c886bb2a6beeafb15214708d9c8a", 
+            "login": "peutetre", 
+            "message": "fix WS request timeout config", 
+            "parents": [
+                [
+                    "fdfae8139bac5047d1eeadfdcc9ec52a694dcaf2", 
+                    2033, 
+                    40
+                ]
+            ], 
+            "space": 40, 
+            "time": 2133
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-21 07:49:29", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "3c50ab46fed59973d6ec4b69227eb6091c469590", 
+            "login": "guillaumebort", 
+            "message": "Apply `ws.timeout` to Request timeouts as well", 
+            "parents": [
+                [
+                    "af4186185a552e67764028d796892230de09e6d0", 
+                    2085, 
+                    13
+                ]
+            ], 
+            "space": 13, 
+            "time": 2134
+        }, 
+        {
+            "author": "Guillaume Bort", 
+            "date": "2012-05-21 07:49:56", 
+            "gravatar": "adcd749d588278dbd255068c1d4b20d3", 
+            "id": "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+            "login": "guillaumebort", 
+            "message": "Apply `ws.timeout` to Request timeouts as well", 
+            "parents": [
+                [
+                    "3b239121a2b449324b68218d2806b33ce5aedd4c", 
+                    2132, 
+                    0
+                ]
+            ], 
+            "space": 0, 
+            "time": 2135
+        }, 
+        {
+            "author": "Mathias Bogaert", 
+            "date": "2012-05-21 08:40:26", 
+            "gravatar": "08d76a0a112e498e55e5c55816d4853f", 
+            "id": "cbb2770393b7f686afb27970fd99c21bf45a5438", 
+            "login": "analytically", 
+            "message": "Update Jaxen to 1.1.4. \"Jaxen 1.1.4 is now compatible with Java 7. It also fixes several bugs involving namespace nodes, and variable and function bindings in the presence of the default namespace.\"\r", 
+            "parents": [
+                [
+                    "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+                    2135, 
+                    0
+                ]
+            ], 
+            "space": 39, 
+            "time": 2136
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-21 09:17:03", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "fbb5a9559f64d035798108ca0efdbf5f953c65ee", 
+            "login": "julienrf", 
+            "message": "Remove (again) PathBindable[Option]", 
+            "parents": [
+                [
+                    "8e353df149ff4f0d19e029d459bffe5111f54a03", 
+                    2116, 
+                    38
+                ]
+            ], 
+            "space": 38, 
+            "time": 2137
+        }, 
+        {
+            "author": "Giancarlo Silva", 
+            "date": "2012-05-21 11:03:26", 
+            "gravatar": "3a10ff02dbeb7096b000b4d9096855ea", 
+            "id": "c5e29799817f4e87082b340d361d953a3bc6adf9", 
+            "login": "GiancarloZer0", 
+            "message": "Tradu\u00e7\u00e3o e adapta\u00e7\u00e3o de algumas linhas do arquivo \"README.md\".", 
+            "parents": [
+                [
+                    "780e9a6a2a6048483a81bb9ed0870a24fd8c924c", 
+                    1976, 
+                    16
+                ]
+            ], 
+            "space": 16, 
+            "time": 2138
+        }, 
+        {
+            "author": "Julien Richard-Foy", 
+            "date": "2012-05-21 15:15:03", 
+            "gravatar": "9fd4b697894b088c1dd71f333c0eab59", 
+            "id": "5fc76651f9c40e9784dc4cdaccd70f8d3274033c", 
+            "login": "julienrf", 
+            "message": "Fix Promise#filter", 
+            "parents": [
+                [
+                    "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+                    2135, 
+                    0
+                ]
+            ], 
+            "space": 1, 
+            "time": 2139
+        }, 
+        {
+            "author": "Toshiyuki Takahashi", 
+            "date": "2012-05-21 19:20:12", 
+            "gravatar": "8344747d451bd314e45ce108ed79f5f3", 
+            "id": "51f9b67a8f20f92dc5d81dc9b91590200b1184c6", 
+            "login": "", 
+            "message": "Fixed Form#withError.", 
+            "parents": [
+                [
+                    "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+                    2135, 
+                    0
+                ]
+            ], 
+            "space": 26, 
+            "time": 2140
+        }, 
+        {
+            "author": "Sadek Drobi", 
+            "date": "2012-05-22 00:10:53", 
+            "gravatar": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "id": "c45771d77f49b6d46df007539180ba1a5e479040", 
+            "login": "sadache", 
+            "message": "Merge pull request #302 from julienrf/fix/459", 
+            "parents": [
+                [
+                    "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+                    2135, 
+                    0
+                ], 
+                [
+                    "5fc76651f9c40e9784dc4cdaccd70f8d3274033c", 
+                    2139, 
+                    1
+                ]
+            ], 
+            "space": 0, 
+            "time": 2141
+        }, 
+        {
+            "author": "Ben McCann", 
+            "date": "2012-05-22 01:01:25", 
+            "gravatar": "b2e85e2dc300d44d9ecb624fdf7e8eac", 
+            "id": "c67cbb769be01bab847af97d0d5484a12e0ddf6b", 
+            "login": "", 
+            "message": "Fix Guava compatibility issues", 
+            "parents": [
+                [
+                    "c45771d77f49b6d46df007539180ba1a5e479040", 
+                    2141, 
+                    0
+                ]
+            ], 
+            "space": 36, 
+            "time": 2142
+        }
+    ]
+}

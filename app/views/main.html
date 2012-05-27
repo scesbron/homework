@@ -11,10 +11,18 @@
     <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
    </head>
    <body>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+       <a class="brand" href="/">&{'site.title'}</a>
+    </div>
+  </div>
+</div>
 #{doLayout /}
 #{press.script 'jquery.js'/}
 #{press.script 'bootstrap.js'/}
 #{press.script 'main.js' /}
 #{press.compressed-script /}
+#{get 'moreScripts'/}
   </body>
 </html>

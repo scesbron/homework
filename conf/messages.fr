@@ -2,8 +2,31 @@
 # For example, for French create a messages.fr file
 #
 
+# Global
+#~~~~~~~~~~~
+repository.name=Nom
+repository.username=Propriétaire
+repository.description=Description
+repository.size=Taille
+repository.watchers=Watchers
+list.next=Suivants
+list.previous=Précédents
+site.title=Analyse d'un repository github
+
 # Index
 #~~~~~~
 index.title=Analyse d'un repository github
 index.search.help=Saisissez le nom du repository que vous souhaitez analyser
 index.search=Rechercher
+
+# Search
+#~~~~~~~
+search.title=Liste des repositories
+table.explanation=Ce tableau affiche les résultats de %s à %S. Pour afficher d'autres résultats utilisez les boutons de navigation ci-dessous.
+
+# Show
+#~~~~~
+show.title=%s/%s
+commit.number=Nombre de commits
+commit.last.repartition=Répartition des derniers commits par commiter
+commit.timeline=Répartition des commits dans le temps

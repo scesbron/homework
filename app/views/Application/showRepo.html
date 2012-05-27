@@ -1,0 +1,99 @@
+#{extends 'main.html' /}
+#{set title: messages.get('show.title', username, name) /}
+#{set 'moreScripts'}
+#{press.script 'highcharts.js'/}
+<script type="text/javascript">
+var chartCommiters;
+var timeline;
+$(document).ready(function() {
+  chartCommiters = new Highcharts.Chart({
+    chart: {
+      renderTo: 'commiters-chart',
+      type: 'bar'
+    },
+    title: {
+      text: '&{'commit.last.repartition'}'
+    },
+    xAxis: {
+      categories: [
+#{list repo?.commiters, as:'user'}
+        '${user.fullname.raw()}'#{ifnot user_isLast},#{/ifnot}
+#{/list}
+      ]
+    },
+    yAxis: {
+      title: {
+        text: '&{'commit.number'}'
+      }
+    },
+    series: [{
+      name: '&{'commit.number'}',
+      data: [
+#{list repo?.commiters, as:'user'}
+        ${user.commits.size()}#{ifnot user_isLast},#{/ifnot}
+#{/list}
+      ]
+    }]
+  });
+  timeline = new Highcharts.Chart({
+    chart: {
+      renderTo: 'timeline-chart',
+      type: 'spline'
+    },
+    title: {
+      text: '&{'commit.timeline'}'
+    },
+    xAxis: {
+      type: 'datetime'
+    },
+    yAxis: {
+      title: {
+        text: '&{'commit.number'}'
+      },
+      min: 0
+    },
+    series: [{
+      name: '&{'commit.number'}',
+      pointInterval: 24 * 3600 * 1000,
+      pointStart: ${repo?.getMinDate()?.getTime()?:0},
+      data: [
+#{list repo?.getCommitRepartitionByDate(), as:'entry'}
+        ${entry.getValue()}#{ifnot entry_isLast},#{/ifnot}
+#{/list}
+      ]
+    }]
+  });
+});
+//-->
+</script>
+#{/set}
+<div class="container">
+  <div class="row-fluid">
+    <div class="span10">
+      <h1>#{get 'title' /}</h1>
+#{if repo}
+      <h2>Activité pour les ${repo.commits.size()} dernier${repo.commits.size().pluralize()} commit${repo.commits.size().pluralize()}</h2>
+#{/if}
+#{else}
+      <h2>Désolé nous n'avons pas pu récupérer l'activité pour ce repository</h2>
+#{/else}
+    </div>
+    <div class="span2">
+      <a class="btn" href="@{index}">Nouvelle recherche</a>
+    </div>
+  </div>
+#{if repo}
+	<ul class="nav nav-tabs" id="myTab">
+		<li class="active"><a href="#commiters" data-toggle="tab">Commiters</a></li>
+		<li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div class="tab-pane active" id="commiters">
+	    <div id="commiters-chart" style="width: 100%; height: ${150 + repo.commiters.size() * 20}px"></div>
+    </div>
+    <div class="tab-pane" id="timeline">
+      <div id="timeline-chart" style="width: 940px; height: 400px"></div>
+    </div>
+  </div>
+#{/if}
+</div>

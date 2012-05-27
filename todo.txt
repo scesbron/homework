@@ -1,0 +1,8 @@
+- Revoir le div de loading
+- Voir comment définir le fuseau horaire de la date lors du parsing json : c'est gmt-8
+- Revérifier que toutes les translations sont bien faites
+- Mettre en place typeahead sur le champ de recherche
+- Configurer cobertura et voir la couverture des tests
+- Ajouter des données supplémentaires dans le repo
+- Ajouter des attributs à LightRepository et ajouter des sorts (par taille par défaut)
+- Mettre en place datatables pour naviguer sur les 100 résultats retournés et proposer une navigation pour les plus vieux/plus récents

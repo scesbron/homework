@@ -1,0 +1,12 @@
+      <ul class="pager">
+#{if _arg.hasPrevious()}
+        <li class="previous">
+          <a href="@{searchRepo(_arg.number - 1, _arg.query)}" class="paginate">&larr; &{'list.previous'}</a>
+        </li>
+#{/if}
+#{if _arg.hasNext()}
+        <li class="next">
+          <a href="@{searchRepo(_arg.number + 1, _arg.query)}" class="paginate">&{'list.next'} &rarr;</a>
+        </li>
+#{/if}
+      </ul>

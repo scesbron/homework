@@ -3,4 +3,4 @@
 require:
     - play
     - play -> press 1.0.25
-    - play -> cobertura 2.4
+    - play -> cobertura 2.2

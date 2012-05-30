@@ -22,17 +22,19 @@ public class Application extends Controller {
     }
 
     public static void searchRepo(int pageNumber, String query) throws Exception {
-    	Page<LightRepository> page = await(new SearchLightRepositoryPage(query, pageNumber).now());
+    	// No async because it breaks tests
+    	Page<LightRepository> page = new SearchLightRepositoryPage(query, pageNumber).now().get();
     	if (page != null && page.data.size() == 1) {
     		LightRepository repo = page.data.get(0);
-    		showRepo(repo.username, repo.name);
+    		showRepo(repo.owner, repo.name);
     	} else {
     		render("@index", page);
     	}
     }
 
     public static void showRepo(String username, String name) throws Exception {
-    	FullRepository repo = await(new GetFullRepository(username, name).now());
+    	// No async because it breaks tests
+    	FullRepository repo = new GetFullRepository(username, name).now().get();
     	render(repo, username, name);
     }
 }

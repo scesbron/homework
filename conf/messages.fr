@@ -5,7 +5,7 @@
 # Global
 #~~~~~~~~~~~
 repository.name=Nom
-repository.username=Propriétaire
+repository.owner=Propriétaire
 repository.description=Description
 repository.size=Taille
 repository.watchers=Watchers
@@ -27,6 +27,7 @@ table.explanation=Ce tableau affiche les résultats de %s à %S. Pour afficher d
 # Show
 #~~~~~
 show.title=%s/%s
+show.sorry=Désolé nous n'avons pas pu récupérer l'activité pour ce repository
 commit.number=Nombre de commits
 commit.last.repartition=Répartition des derniers commits par commiter
 commit.timeline=Répartition des commits dans le temps

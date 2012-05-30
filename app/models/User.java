@@ -1,21 +1,22 @@
 package models;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
-public class User {
+import com.google.gson.annotations.SerializedName;
+
+public class User extends GithubModel {
+	public String email;
 	public String name;
-	public String fullname;
-	public String gravatar;
+	public String login;
+	@SerializedName("gravatar_id")
+	public String gravatarId;
+	public String company;
+	public int contributions;
+	public String location;
 
 	public List<Commit> commits;
-
-	public User(String name, String fullname, String gravatar) {
-		super();
-		this.name = name;
-		this.fullname = fullname;
-		this.gravatar = gravatar;
-	}
 
 	/**
 	 * We initialize commits here because if we do it directly on the commits
@@ -27,5 +28,26 @@ public class User {
 			commits = new ArrayList<Commit>();
 		}
 		return commits;
+	}
+
+	public User(String email, String login, String name) {
+		this.email = email;
+		this.login = login;
+		this.name = name;
+	}
+
+	public String getName() {
+		return name == null ? login : name;
+	}
+
+	public String toString() {
+		return String.format("User[%s]", email);
+	}
+
+	// STATIC METHODS
+	//~~~~~~~~~~~~~~~
+
+	public static final List<User> findContributorsList(String owner, String name) {
+		return findList(WS(String.format("/api/v2/json/repos/show/%s/%s/contributors", owner, name)), User.class, "contributors");
 	}
 }

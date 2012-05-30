@@ -10,20 +10,21 @@ import play.jobs.Job;
 
 public class GetFullRepository extends Job<FullRepository> {
 
-	public String username;
+	public String owner;
 	public String name;
 
-	public GetFullRepository(String username, String name) {
-		this.username = username;
+	public GetFullRepository(String owner, String name) {
+		this.owner = owner;
 		this.name = name;
 	}
 	@Override
 	public FullRepository doJobWithResult() throws Exception {
-		FullRepository repo = FullRepository.get(username, name);
-    	repo.commits = Commit.findList(username, name, repo.nethash);
+		FullRepository repo = FullRepository.get(owner, name);
+		repo.contributors = User.findContributorsList(owner, name);
+    	repo.commits = Commit.findList(owner, name);
 
     	// Sort users by number of commits
-    	Collections.sort(repo.commiters, new Comparator<User>() {
+    	Collections.sort(repo.contributors, new Comparator<User>() {
     		public int compare(User user1, User user2) {
     			return user2.commits.size() - user1.commits.size();
     		};

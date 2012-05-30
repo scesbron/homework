@@ -1,8 +1,12 @@
 package models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map.Entry;
+
+import org.joda.time.DateTime;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -15,10 +19,12 @@ import com.jamonapi.MonitorFactory;
 import play.Logger;
 import play.Play;
 import play.cache.Cache;
+import play.data.binding.types.DateBinder;
 import play.libs.WS.HttpResponse;
 import play.libs.WS.WSRequest;
+import utils.DateTimeDeserializer;
 
-public class GithubModel {
+public class GithubModel implements Serializable {
 
 	public static final String GET = "GET";
 	public static final String POST = "POST";
@@ -39,24 +45,37 @@ public class GithubModel {
 
 	@SuppressWarnings("unchecked")
 	protected static <T> T findCached(String cacheKey, WSRequest request, Class<T> clazz) {
+		return findCached(cacheKey, request, clazz, null);
+	}
+	@SuppressWarnings("unchecked")
+	protected static <T> T findCached(String cacheKey, WSRequest request, Class<T> clazz, String name) {
 		T result = (T) Cache.get(cacheKey);
 		if (result == null) {
-			result = find(request, clazz);
+			result = find(request, clazz, name);
 			Cache.set(cacheKey, result, DEFAULT_CACHE_DURATION);
 		}
 		return result;
 	}
 
 	protected static <T> T find(WSRequest request, Class<T> clazz) {
+		return find(request, clazz, null);
+	}
+	protected static <T> T find(WSRequest request, Class<T> clazz, String name) {
 		HttpResponse response = logRequest(request).get();
-		return find(response, clazz);
+		return find(response, clazz, name);
 	}
 
 	protected static final <T> T find(HttpResponse response, Class<T> clazz) {
+		return find(response, clazz, null);
+	}
+	protected static final <T> T find(HttpResponse response, Class<T> clazz, String name) {
 		T result = null;
 		if (response.success()) {
 			Gson gson = createGson();
 			JsonObject jsonResponse = response.getJson().getAsJsonObject();
+			if (name != null) {
+				jsonResponse = jsonResponse.get(name).getAsJsonObject();
+			}
 			if (Logger.isDebugEnabled()) {
 				Logger.debug(gson.toJson(result));
 			}
@@ -111,7 +130,9 @@ public class GithubModel {
 	}
 
 	protected static Gson createGson() {
-		GsonBuilder builder = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss");
+		GsonBuilder builder = new GsonBuilder();
+		// TODO better date handling
+		builder.registerTypeAdapter(DateTime.class, new DateTimeDeserializer());
 		if (Logger.isDebugEnabled()) {
 			builder.setPrettyPrinting();
 		}

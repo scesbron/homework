@@ -6,10 +6,11 @@
 - jquery 1.7.2
 - highcharts 2.2.3
 - press module 1.0.25
-
+- cobertura 2.2
 
 ### Bootstrap
 - Modification du css pour le bug d'affichage des span dans un layout fluid
+- Modification du js pour avoir une source ajax pour le typeahead
 
 ## Conception
 
@@ -22,6 +23,8 @@ On a trois fonctions distinctes :
 - Gérer sur cette page les deux fonctions recherche et liste.
 - Lorsque l'on valide la recherche on affiche la liste dessous en ajax.
 - Proposer également en v2 de l'autocomplétion au niveau de la recherche pour aller directement sur le détail
+    - L'autocomplétion n'est pas pratique car la recherche est longue
+    - Une recherche sur une description complète ne retrouve pas forcément l'élément => l'autocomplétion n'est pas pratique à utiliser
 
 ### Accès github
 

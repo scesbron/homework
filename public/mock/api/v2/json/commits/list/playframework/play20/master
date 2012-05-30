@@ -1,0 +1,854 @@
+{
+    "commits": [
+        {
+            "author": {
+                "email": "leroux.nicolas@gmail.com", 
+                "login": "pepite", 
+                "name": "Nicolas Leroux"
+            }, 
+            "authored_date": "2012-05-25T02:56:30-07:00", 
+            "committed_date": "2012-05-25T02:56:30-07:00", 
+            "committer": {
+                "email": "leroux.nicolas@gmail.com", 
+                "login": "pepite", 
+                "name": "Nicolas Leroux"
+            }, 
+            "id": "f7de038a48f1491e5836e45d0b3f60361deb8e80", 
+            "message": "fixed typo", 
+            "parents": [
+                {
+                    "id": "655ff7fa17366f6390b55f5f454b8950c013b22d"
+                }
+            ], 
+            "tree": "62f4180c97686d26a54e7ae2846458d3bfa622a2", 
+            "url": "/playframework/Play20/commit/f7de038a48f1491e5836e45d0b3f60361deb8e80"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-24T11:26:30-07:00", 
+            "committed_date": "2012-05-24T11:26:30-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "655ff7fa17366f6390b55f5f454b8950c013b22d", 
+            "message": "fix functional test for If-Modified-Since", 
+            "parents": [
+                {
+                    "id": "76205394764f8e1d5a45c797558bf28bf4cc3f1d"
+                }
+            ], 
+            "tree": "f6b4581f2476f669da6e720cf191d1d53a691464", 
+            "url": "/playframework/Play20/commit/655ff7fa17366f6390b55f5f454b8950c013b22d"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-23T14:08:54-07:00", 
+            "committed_date": "2012-05-23T14:08:54-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "76205394764f8e1d5a45c797558bf28bf4cc3f1d", 
+            "message": "Merge branch 'g8'", 
+            "parents": [
+                {
+                    "id": "7668d23db8b42061c0dea0db802996d6f3a10aac"
+                }, 
+                {
+                    "id": "fb9e4af1ecc414400774e0d6ee9c53e3ec670951"
+                }
+            ], 
+            "tree": "ea1d764cc6e991e99b11ea3ac04d9a1d8400f713", 
+            "url": "/playframework/Play20/commit/76205394764f8e1d5a45c797558bf28bf4cc3f1d"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-23T13:54:34-07:00", 
+            "committed_date": "2012-05-23T13:54:34-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "7668d23db8b42061c0dea0db802996d6f3a10aac", 
+            "message": "Merge branch 'master' of github.com:playframework/Play20", 
+            "parents": [
+                {
+                    "id": "23641274d3b86bc212727d7db4163266fb7e3681"
+                }, 
+                {
+                    "id": "c45771d77f49b6d46df007539180ba1a5e479040"
+                }
+            ], 
+            "tree": "bc69213ba7ce31bad8426051d0d0957dd8538a07", 
+            "url": "/playframework/Play20/commit/7668d23db8b42061c0dea0db802996d6f3a10aac"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-23T11:10:25-07:00", 
+            "committed_date": "2012-05-23T13:44:18-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "23641274d3b86bc212727d7db4163266fb7e3681", 
+            "message": "[#276 #327 lh 480] etag enhancements\n\n- add last-modified 304 handling, date header, and last modified of file in jar (by @jamesward)\n\n- make sure etag header is a quoted-string\n\n- add tests for etag enhancements ie Last-Modified and If-Modified-Since\n\n- add test for etag quoted-strings", 
+            "parents": [
+                {
+                    "id": "5fc76651f9c40e9784dc4cdaccd70f8d3274033c"
+                }
+            ], 
+            "tree": "bc69213ba7ce31bad8426051d0d0957dd8538a07", 
+            "url": "/playframework/Play20/commit/23641274d3b86bc212727d7db4163266fb7e3681"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-22T16:52:36-07:00", 
+            "committed_date": "2012-05-22T16:52:36-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "fb9e4af1ecc414400774e0d6ee9c53e3ec670951", 
+            "message": "improve g8 error reporting", 
+            "parents": [
+                {
+                    "id": "fd3570330ec7c7d9937149811437fa7045c093c3"
+                }
+            ], 
+            "tree": "193ae50ce4ea6f332b8cdab20676124b1ed4d59c", 
+            "url": "/playframework/Play20/commit/fb9e4af1ecc414400774e0d6ee9c53e3ec670951"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-22T15:13:51-07:00", 
+            "committed_date": "2012-05-22T15:13:51-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "fd3570330ec7c7d9937149811437fa7045c093c3", 
+            "message": "add g8 integration\n\nthis changeset allows users to create and use g8 project templates on top of the skeletons that are shipped with play.\n\nOne can either populate the defaults for g8 templates interactively or create a g8 project directly by\n`play new app_name --g8 githubuser/g8repo`", 
+            "parents": [
+                {
+                    "id": "e5faf2cfb923d41600b686995b79722e6c7518b9"
+                }
+            ], 
+            "tree": "c43f3e040c78e5d9d0ab6af228efca6c318850b8", 
+            "url": "/playframework/Play20/commit/fd3570330ec7c7d9937149811437fa7045c093c3"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-22T00:10:53-07:00", 
+            "committed_date": "2012-05-22T00:10:53-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "c45771d77f49b6d46df007539180ba1a5e479040", 
+            "message": "Merge pull request #302 from julienrf/fix/459\n\nFix Promise#filter", 
+            "parents": [
+                {
+                    "id": "e5faf2cfb923d41600b686995b79722e6c7518b9"
+                }, 
+                {
+                    "id": "5fc76651f9c40e9784dc4cdaccd70f8d3274033c"
+                }
+            ], 
+            "tree": "263ab5161cf37e54f8eb51bdbc04304c6dce6436", 
+            "url": "/playframework/Play20/commit/c45771d77f49b6d46df007539180ba1a5e479040"
+        }, 
+        {
+            "author": {
+                "email": "julien@richard-foy.fr", 
+                "login": "julienrf", 
+                "name": "Julien Richard-Foy"
+            }, 
+            "authored_date": "2012-05-12T06:06:09-07:00", 
+            "committed_date": "2012-05-21T15:15:03-07:00", 
+            "committer": {
+                "email": "julien@richard-foy.fr", 
+                "login": "julienrf", 
+                "name": "Julien Richard-Foy"
+            }, 
+            "id": "5fc76651f9c40e9784dc4cdaccd70f8d3274033c", 
+            "message": "Fix Promise#filter", 
+            "parents": [
+                {
+                    "id": "e5faf2cfb923d41600b686995b79722e6c7518b9"
+                }
+            ], 
+            "tree": "263ab5161cf37e54f8eb51bdbc04304c6dce6436", 
+            "url": "/playframework/Play20/commit/5fc76651f9c40e9784dc4cdaccd70f8d3274033c"
+        }, 
+        {
+            "author": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "authored_date": "2012-05-21T07:49:29-07:00", 
+            "committed_date": "2012-05-21T07:49:56-07:00", 
+            "committer": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "id": "e5faf2cfb923d41600b686995b79722e6c7518b9", 
+            "message": "Apply `ws.timeout` to Request timeouts as well", 
+            "parents": [
+                {
+                    "id": "3b239121a2b449324b68218d2806b33ce5aedd4c"
+                }
+            ], 
+            "tree": "c6d449c6e78face989810a091a64a94bc1cdb67b", 
+            "url": "/playframework/Play20/commit/e5faf2cfb923d41600b686995b79722e6c7518b9"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-21T00:37:31-07:00", 
+            "committed_date": "2012-05-21T00:37:50-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "3b239121a2b449324b68218d2806b33ce5aedd4c", 
+            "message": "more helper methods for iteratees", 
+            "parents": [
+                {
+                    "id": "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33"
+                }
+            ], 
+            "tree": "6619b154ab4c5b9465a3f381fe10557004540afe", 
+            "url": "/playframework/Play20/commit/3b239121a2b449324b68218d2806b33ce5aedd4c"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-18T06:58:40-07:00", 
+            "committed_date": "2012-05-18T07:00:14-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "ae32dfb365a2ac24ccf793721a0137bd2bbe5f33", 
+            "message": "add test for configuring promise timeout", 
+            "parents": [
+                {
+                    "id": "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76"
+                }
+            ], 
+            "tree": "9bd86f472cac96ad7fc7f6e48aa01b28e0a0c5df", 
+            "url": "/playframework/Play20/commit/ae32dfb365a2ac24ccf793721a0137bd2bbe5f33"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-17T14:42:03-07:00", 
+            "committed_date": "2012-05-17T14:42:03-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76", 
+            "message": "Merge pull request #313 from blockmar/pidfile-445\n\nSupport for setting pid-file path using system property", 
+            "parents": [
+                {
+                    "id": "43b2663efc3839173fd61cf6082465def8570d16"
+                }, 
+                {
+                    "id": "263fea526249746af7cff7d8038dfc33f74d931c"
+                }
+            ], 
+            "tree": "5ae6f23c8930d89af8f16721a95f083593ae324a", 
+            "url": "/playframework/Play20/commit/bc0fc4ba5e8d558734dcc54c5dd0bbb8f296ed76"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-17T14:41:28-07:00", 
+            "committed_date": "2012-05-17T14:41:28-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "43b2663efc3839173fd61cf6082465def8570d16", 
+            "message": "Merge pull request #312 from blockmar/flashcookie-416\n\nSupport for changing the name of the FLASH-cookie", 
+            "parents": [
+                {
+                    "id": "7b45f3f35d7cfb57994772a15a3abe14719f01c4"
+                }, 
+                {
+                    "id": "f8ac39a4739ed154281bc571397aa57e56a8da2a"
+                }
+            ], 
+            "tree": "7e63328849decc5a2a6c108fb7dde79cfd053cae", 
+            "url": "/playframework/Play20/commit/43b2663efc3839173fd61cf6082465def8570d16"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-16T13:58:01-07:00", 
+            "committed_date": "2012-05-16T14:00:15-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "7b45f3f35d7cfb57994772a15a3abe14719f01c4", 
+            "message": "[fixes lh 406] make Promises' default timeout configurable\nthe default remained the same ie 5s", 
+            "parents": [
+                {
+                    "id": "cf167e40f710adbcdd0a77b22452cff3e45447a0"
+                }
+            ], 
+            "tree": "2d0326fc4dd53e02c768e2e814414fe3bd571c48", 
+            "url": "/playframework/Play20/commit/7b45f3f35d7cfb57994772a15a3abe14719f01c4"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-16T12:15:50-07:00", 
+            "committed_date": "2012-05-16T12:16:23-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "cf167e40f710adbcdd0a77b22452cff3e45447a0", 
+            "message": "Concurrent.broadcast and Enumeratee.filterNot", 
+            "parents": [
+                {
+                    "id": "9105629eab31aa0e4b3ce857772bc3690ee981c9"
+                }
+            ], 
+            "tree": "15a508c0fae113cbcd28ce176585c221b50d39f5", 
+            "url": "/playframework/Play20/commit/cf167e40f710adbcdd0a77b22452cff3e45447a0"
+        }, 
+        {
+            "author": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "authored_date": "2012-05-16T09:02:19-07:00", 
+            "committed_date": "2012-05-16T09:03:32-07:00", 
+            "committer": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "id": "9105629eab31aa0e4b3ce857772bc3690ee981c9", 
+            "message": "Create a standalone actor system for the Promise sub-system. This way Promises doesn't depend of the main Play Invoker. Still need to check that everything can be configured simply.", 
+            "parents": [
+                {
+                    "id": "e8ff62bb77f4856a02ab39519d519322a4bcd2db"
+                }
+            ], 
+            "tree": "c5f7d520b9070ec85b7c7cf7ef453e87bb4111bd", 
+            "url": "/playframework/Play20/commit/9105629eab31aa0e4b3ce857772bc3690ee981c9"
+        }, 
+        {
+            "author": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "authored_date": "2012-05-15T11:47:02-07:00", 
+            "committed_date": "2012-05-16T09:03:32-07:00", 
+            "committer": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "id": "e8ff62bb77f4856a02ab39519d519322a4bcd2db", 
+            "message": "Run sequentially all callback functions for a given Http.Context in the Java Promises API", 
+            "parents": [
+                {
+                    "id": "69e781539b5e19b348dce725834ebe5dcbef94b5"
+                }
+            ], 
+            "tree": "ef60c2f90d722b61ef8eb1b4bd8b4cf667f240ee", 
+            "url": "/playframework/Play20/commit/e8ff62bb77f4856a02ab39519d519322a4bcd2db"
+        }, 
+        {
+            "author": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "authored_date": "2012-05-14T03:07:55-07:00", 
+            "committed_date": "2012-05-16T09:03:32-07:00", 
+            "committer": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "id": "69e781539b5e19b348dce725834ebe5dcbef94b5", 
+            "message": "Add useful meta-data to the default error page (file path and line).", 
+            "parents": [
+                {
+                    "id": "5017026c037521b2b6fcf66361cbe43d64f14d4e"
+                }
+            ], 
+            "tree": "0f6926d7ed0ce80ce5f4b22e1c66c13dea200a09", 
+            "url": "/playframework/Play20/commit/69e781539b5e19b348dce725834ebe5dcbef94b5"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T07:12:50-07:00", 
+            "committed_date": "2012-05-16T07:12:50-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "5017026c037521b2b6fcf66361cbe43d64f14d4e", 
+            "message": "Merge pull request #297 from leon/forms-jodadatetime\n\nFixed documentation on jodaDate", 
+            "parents": [
+                {
+                    "id": "c2f4703940c1cb9f2d52e5533b9847546dfae1ef"
+                }, 
+                {
+                    "id": "ac1c804c4b25b5a9840d8b335bb6dbc66436be6b"
+                }
+            ], 
+            "tree": "6a61d8e227a814d66b45029f456628e4f2f71f92", 
+            "url": "/playframework/Play20/commit/5017026c037521b2b6fcf66361cbe43d64f14d4e"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T07:03:22-07:00", 
+            "committed_date": "2012-05-16T07:03:22-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "c2f4703940c1cb9f2d52e5533b9847546dfae1ef", 
+            "message": "Merge pull request #314 from nraychaudhuri/make_session_httpOnly_configurable\n\nsession.httpOnly is now configurable", 
+            "parents": [
+                {
+                    "id": "d45c0744517d1884c6386ed85e88e73fadff6d07"
+                }, 
+                {
+                    "id": "b54ad7027b1532def332aff710df6416d04bdcba"
+                }
+            ], 
+            "tree": "ff18c51906c1f494a910a06bdb6ed1207071e172", 
+            "url": "/playframework/Play20/commit/c2f4703940c1cb9f2d52e5533b9847546dfae1ef"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:58:48-07:00", 
+            "committed_date": "2012-05-16T06:58:48-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "d45c0744517d1884c6386ed85e88e73fadff6d07", 
+            "message": "Merge pull request #310 from benmccann/config\n\nConfiguration constructor to make working with Java Configuration object easier.", 
+            "parents": [
+                {
+                    "id": "ef8f9fdb9c3b04129e5f3e817395b7ac68ddc7e5"
+                }, 
+                {
+                    "id": "33b7961b54f5c9bdd84815aebea7d1188a25983b"
+                }
+            ], 
+            "tree": "7f62a79b776aa8706c8ff6eddef9c45b6b982505", 
+            "url": "/playframework/Play20/commit/d45c0744517d1884c6386ed85e88e73fadff6d07"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:53:11-07:00", 
+            "committed_date": "2012-05-16T06:53:11-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "ef8f9fdb9c3b04129e5f3e817395b7ac68ddc7e5", 
+            "message": "Merge pull request #307 from vznet/jroper/promise-generics-improvement\n\nModified Java waitAll promise generics to work with promises of different sub types", 
+            "parents": [
+                {
+                    "id": "05ae740d6f744eeac4b90be80db51842ad58743e"
+                }, 
+                {
+                    "id": "b9f9b9645753872c09895818e1a25289595c7ccb"
+                }
+            ], 
+            "tree": "d50255aca027d9ec355773c64368c2264c1ed645", 
+            "url": "/playframework/Play20/commit/ef8f9fdb9c3b04129e5f3e817395b7ac68ddc7e5"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:51:59-07:00", 
+            "committed_date": "2012-05-16T06:51:59-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "05ae740d6f744eeac4b90be80db51842ad58743e", 
+            "message": "Merge pull request #306 from analytically/patch-1\n\nUpgrade Joda Time to 2.1 (fixes #1484) and update Logback to 1.0.3.", 
+            "parents": [
+                {
+                    "id": "4b1aae6e31dd339a44ad6307ada9f4f1b660618e"
+                }, 
+                {
+                    "id": "4852c3ddf15f1c881281b4378f71156ee1a453e2"
+                }
+            ], 
+            "tree": "ee9a4a215df2a045f6ddaebd04116ef36931747d", 
+            "url": "/playframework/Play20/commit/05ae740d6f744eeac4b90be80db51842ad58743e"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:42:46-07:00", 
+            "committed_date": "2012-05-16T06:42:46-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "4b1aae6e31dd339a44ad6307ada9f4f1b660618e", 
+            "message": "Merge pull request #304 from julienrf/fix/282\n\nRoutes parameters unboxing", 
+            "parents": [
+                {
+                    "id": "7c819302e110a61949c7def8c08ee4b816c98182"
+                }, 
+                {
+                    "id": "0ca2cc6d622c8bbf1d099ac3c41f9042a98fb727"
+                }
+            ], 
+            "tree": "54b358140e05ff88214e9608c4c0d3313f74feff", 
+            "url": "/playframework/Play20/commit/4b1aae6e31dd339a44ad6307ada9f4f1b660618e"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:37:01-07:00", 
+            "committed_date": "2012-05-16T06:37:01-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "7c819302e110a61949c7def8c08ee4b816c98182", 
+            "message": "Merge pull request #301 from julienrf/fix/447\n\nHandle fully qualified type names of querystring route parameters having a default value", 
+            "parents": [
+                {
+                    "id": "0f9b019dc5679d61d82fffab909d273b31d45426"
+                }, 
+                {
+                    "id": "d62713c14c8ec4d1aa0ed080a29ff48bbf3c0cf7"
+                }
+            ], 
+            "tree": "f261a0b766a6df2a63c79c688201968ff1e8f7d7", 
+            "url": "/playframework/Play20/commit/7c819302e110a61949c7def8c08ee4b816c98182"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:35:34-07:00", 
+            "committed_date": "2012-05-16T06:35:34-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "0f9b019dc5679d61d82fffab909d273b31d45426", 
+            "message": "Merge pull request #300 from vznet/jroper/java-response-additions\n\nBasic useful functionality for Java WS.Response", 
+            "parents": [
+                {
+                    "id": "22dbcfebe7d0bd99f1b8600e2a4e564bbd54f9a9"
+                }, 
+                {
+                    "id": "3d1d55efed727258fa6a4663cd3ce1d3e9122774"
+                }
+            ], 
+            "tree": "5934d222f15fd1a1ba1112a064c94d7b83cb1d1f", 
+            "url": "/playframework/Play20/commit/0f9b019dc5679d61d82fffab909d273b31d45426"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "authored_date": "2012-05-16T06:33:35-07:00", 
+            "committed_date": "2012-05-16T06:33:35-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "Peter Hausel"
+            }, 
+            "id": "22dbcfebe7d0bd99f1b8600e2a4e564bbd54f9a9", 
+            "message": "Merge pull request #298 from leon/webfont-mimetypes\n\nAdded mime types for .eot and .woff", 
+            "parents": [
+                {
+                    "id": "aa5c5017f734710afb2d486200fa79c1f69b4e25"
+                }, 
+                {
+                    "id": "6c5bcdb7f4081f8ceb041a1603fb5d91ac7b8367"
+                }
+            ], 
+            "tree": "59ab2a422ecb79a725da1ca7fec836a8569c8d41", 
+            "url": "/playframework/Play20/commit/22dbcfebe7d0bd99f1b8600e2a4e564bbd54f9a9"
+        }, 
+        {
+            "author": {
+                "email": "nraychaudhuri@gmail.com", 
+                "login": "nraychaudhuri", 
+                "name": "Nilanjan Raychaudhuri"
+            }, 
+            "authored_date": "2012-05-15T18:03:02-07:00", 
+            "committed_date": "2012-05-15T18:03:02-07:00", 
+            "committer": {
+                "email": "nraychaudhuri@gmail.com", 
+                "login": "nraychaudhuri", 
+                "name": "Nilanjan Raychaudhuri"
+            }, 
+            "id": "b54ad7027b1532def332aff710df6416d04bdcba", 
+            "message": "session.httpOnly is now configurable", 
+            "parents": [
+                {
+                    "id": "aa5c5017f734710afb2d486200fa79c1f69b4e25"
+                }
+            ], 
+            "tree": "13bcfdcd39c510f9221b2f044346a5072f054111", 
+            "url": "/playframework/Play20/commit/b54ad7027b1532def332aff710df6416d04bdcba"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-15T15:18:48-07:00", 
+            "committed_date": "2012-05-15T15:18:48-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "aa5c5017f734710afb2d486200fa79c1f69b4e25", 
+            "message": "Enumeratee.dropWhile", 
+            "parents": [
+                {
+                    "id": "e0695c95fa01752cad64a6b340408cae1b6457e1"
+                }
+            ], 
+            "tree": "7bb0920095d0ade01c21705cfe601f8a9d4f81b9", 
+            "url": "/playframework/Play20/commit/aa5c5017f734710afb2d486200fa79c1f69b4e25"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-15T14:42:47-07:00", 
+            "committed_date": "2012-05-15T14:43:25-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "e0695c95fa01752cad64a6b340408cae1b6457e1", 
+            "message": "Checkdone Enumeratee for shared semantics for drop and takeWhile", 
+            "parents": [
+                {
+                    "id": "e136cfee17abd14fd4ad0e0d2c0e009496cad448"
+                }
+            ], 
+            "tree": "9a8b162ca8764aba47ecfe2fed11bae39f84a2af", 
+            "url": "/playframework/Play20/commit/e0695c95fa01752cad64a6b340408cae1b6457e1"
+        }, 
+        {
+            "author": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "authored_date": "2012-05-15T12:31:48-07:00", 
+            "committed_date": "2012-05-15T12:31:48-07:00", 
+            "committer": {
+                "email": "guillaume.bort@gmail.com", 
+                "login": "guillaumebort", 
+                "name": "Guillaume Bort"
+            }, 
+            "id": "e136cfee17abd14fd4ad0e0d2c0e009496cad448", 
+            "message": "Merge pull request #293 from fernandezpablo85/master\n\nSupport for AsyncResults in functional testing", 
+            "parents": [
+                {
+                    "id": "2fcc284dbf04b0fd7e92c4e549175a33e73105aa"
+                }, 
+                {
+                    "id": "3b6982b42ec5f065a58278e2c291e5a24c51ccc7"
+                }
+            ], 
+            "tree": "5b5afebd1079bd5d655b423986900041e9a5ff6a", 
+            "url": "/playframework/Play20/commit/e136cfee17abd14fd4ad0e0d2c0e009496cad448"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-15T12:17:26-07:00", 
+            "committed_date": "2012-05-15T12:17:26-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "2fcc284dbf04b0fd7e92c4e549175a33e73105aa", 
+            "message": "interleave a list on Enumerators", 
+            "parents": [
+                {
+                    "id": "e7b8cfaaa44b129b650a5c512a57d1f3e3a391b0"
+                }
+            ], 
+            "tree": "60714795dd1e9c7a4fd4eca356e9935ed776e334", 
+            "url": "/playframework/Play20/commit/2fcc284dbf04b0fd7e92c4e549175a33e73105aa"
+        }, 
+        {
+            "author": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "authored_date": "2012-05-15T06:31:42-07:00", 
+            "committed_date": "2012-05-15T06:32:02-07:00", 
+            "committer": {
+                "email": "github@sadekdrobi.com", 
+                "login": "sadache", 
+                "name": "Sadek Drobi"
+            }, 
+            "id": "e7b8cfaaa44b129b650a5c512a57d1f3e3a391b0", 
+            "message": "fixes orTimeout for Promise", 
+            "parents": [
+                {
+                    "id": "3065086fdb9de279d09af5a546a35b5e0ec51c82"
+                }
+            ], 
+            "tree": "510dd03a1ba0dd240eea49115490d237e1123368", 
+            "url": "/playframework/Play20/commit/e7b8cfaaa44b129b650a5c512a57d1f3e3a391b0"
+        }, 
+        {
+            "author": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "authored_date": "2012-05-15T05:30:29-07:00", 
+            "committed_date": "2012-05-15T05:34:37-07:00", 
+            "committer": {
+                "email": "peter_kovac11@hotmail.com", 
+                "login": "pk11", 
+                "name": "peter hausel"
+            }, 
+            "id": "3065086fdb9de279d09af5a546a35b5e0ec51c82", 
+            "message": "[lh 415] expose the underlying WebDriver.Options interface via `TestBrowser#manage`\n\nWebDriver.Options lets you modify and add cookies between runs, also now you can set generic timeouts for TestBrowser", 
+            "parents": [
+                {
+                    "id": "1052fbe74f90fbbadc5052261f59324f69ef1300"
+                }
+            ], 
+            "tree": "36d96401a605ba1533aa6e865bfec8637ab8ecda", 
+            "url": "/playframework/Play20/commit/3065086fdb9de279d09af5a546a35b5e0ec51c82"
+        }
+    ]
+}

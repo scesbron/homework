@@ -21,7 +21,7 @@ import utils.Page;
 import utils.UrlUtils;
 
 public class LightRepository extends GithubModel {
-	public String username;
+	public String owner;
 	public String name;
 	public String description;
 	public int size;

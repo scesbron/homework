@@ -6,6 +6,7 @@
 GET     /                                       Application.index
 *       /search                                 Application.searchRepo
 GET     /{username}/{name}                      Application.showRepo
+GET     /reponames                              Application.getRepoNames
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

@@ -1,0 +1,427 @@
+{
+    "contributors": [
+        {
+            "blog": "http://twitter.com/pk11", 
+            "company": "Typesafe", 
+            "contributions": 400, 
+            "email": "peter_kovac11_at_hotmail_dot_com", 
+            "gravatar_id": "e98302802fb211bed73365b9ab809039", 
+            "location": "New York", 
+            "login": "pk11", 
+            "name": "Peter Hausel", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://guillaume.bort.fr", 
+            "company": "zenexity", 
+            "contributions": 339, 
+            "email": "guillaume.bort@gmail.com", 
+            "gravatar_id": "adcd749d588278dbd255068c1d4b20d3", 
+            "location": "Paris", 
+            "login": "guillaumebort", 
+            "name": "Guillaume Bort", 
+            "type": "User"
+        }, 
+        {
+            "blog": "www.sadekdrobi.com", 
+            "company": "http://twitter.com/Sadache", 
+            "contributions": 179, 
+            "gravatar_id": "a53461191ac0ba0f92dd8f9d9d8f2506", 
+            "location": "Paris", 
+            "login": "sadache", 
+            "name": "Sadek Drobi", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://caffeinelab.net", 
+            "contributions": 116, 
+            "email": "eloisant@gmail.com", 
+            "gravatar_id": "df2d6f1d39a958e46c75e61d4ebb43af", 
+            "location": "Paris, France", 
+            "login": "erwan", 
+            "name": "Erwan Loisant", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 47, 
+            "gravatar_id": "9fd4b697894b088c1dd71f333c0eab59", 
+            "location": "Paris, France", 
+            "login": "julienrf", 
+            "name": "Julien Richard-Foy", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://lunatech-research.com", 
+            "company": "Lunatech Research", 
+            "contributions": 12, 
+            "email": "leroux.nicolas@gmail.com", 
+            "gravatar_id": "34fe9578c98748263731073b5013cb07", 
+            "location": "Rotterdam", 
+            "login": "pepite", 
+            "name": "Nicolas Leroux", 
+            "type": "User"
+        }, 
+        {
+            "blog": "twitter.com/baloose", 
+            "company": "Zenexity", 
+            "contributions": 11, 
+            "email": "", 
+            "gravatar_id": "28a3fe3e30c21aad3bebd1fb6e69edd7", 
+            "location": "Paris, France", 
+            "login": "baloo", 
+            "name": "Arthur Gautier", 
+            "type": "User"
+        }, 
+        {
+            "blog": "42loops.com", 
+            "company": "", 
+            "contributions": 11, 
+            "email": "paul@42loops.com", 
+            "gravatar_id": "65920e23fe9e867755920783db9fe3aa", 
+            "location": "Paris", 
+            "login": "peutetre", 
+            "name": "Paul Panserrieu", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://jazzy.id.au", 
+            "contributions": 8, 
+            "email": "james@jazzy.id.au", 
+            "gravatar_id": "9190b16ee9b1e6d0a02202fc6aaa6e05", 
+            "login": "jroper", 
+            "name": "James Roper", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://www.lunatech-research.com/users/peter-hilton", 
+            "company": "Lunatech", 
+            "contributions": 8, 
+            "gravatar_id": "ec8206b2998fb26f34b2a9aed5ad3498", 
+            "location": "Rotterdam, NL", 
+            "login": "hilton", 
+            "name": "Peter Hilton", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://www.mrspeaker.net", 
+            "company": "Mr Speaker", 
+            "contributions": 6, 
+            "email": "mrspeaker@gmail.com", 
+            "gravatar_id": "a87f31f4ab88f90c7806a718bd170ff1", 
+            "location": "Paris", 
+            "login": "mrspeaker", 
+            "name": "Earle Castledine", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://ometer.com/", 
+            "contributions": 5, 
+            "email": "", 
+            "gravatar_id": "874f23791a8b1efcd1dcaee1851daa1b", 
+            "login": "havocp", 
+            "name": "Havoc Pennington", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://twitter.com/arnihermann", 
+            "contributions": 5, 
+            "email": "arnihr@gmail.com", 
+            "gravatar_id": "6d47b20294c9c50a2dd0598ad65387d4", 
+            "location": "Reykjavik, Iceland", 
+            "login": "arnihermann", 
+            "name": "\u00c1rni Hermann Reynisson", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 4, 
+            "gravatar_id": "81871cc9b45dba8c8ab03d3bc0703880", 
+            "login": "kevinbosman", 
+            "name": "Kevin Bosman", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 4, 
+            "gravatar_id": "02fbf23857c37b6633ffaa733b9cb4ff", 
+            "login": "sgodbillon", 
+            "name": "Stephane Godbillon", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 4, 
+            "gravatar_id": "9f2c708fc4d7367d091d1436b5f97704", 
+            "login": "kahliburke", 
+            "name": "Kahli Burke", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://leon.radley.se", 
+            "company": "digiPlant", 
+            "contributions": 4, 
+            "email": "leon@radley.se", 
+            "gravatar_id": "f9ccd98c185d7407c6d27e2875335a31", 
+            "location": "Sweden", 
+            "login": "leon", 
+            "name": "Leon Radley", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://www.jamesward.com", 
+            "contributions": 4, 
+            "email": "james@jamesward.org", 
+            "gravatar_id": "2a5d2e19906383b1a574f4d48d634d47", 
+            "login": "jamesward", 
+            "name": "James Ward", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://athieriot.github.com/resume", 
+            "company": "Vidal", 
+            "contributions": 3, 
+            "gravatar_id": "0d40e29bf1ef6d51c9b8e6e7a0edd9f5", 
+            "location": "Paris", 
+            "login": "athieriot", 
+            "name": "Aur\u00e9lien Thieriot", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 3, 
+            "email": "boudhevil@gmail.com", 
+            "gravatar_id": "3c1234c19b312879d50783e6977b7ced", 
+            "login": "jto", 
+            "name": "Julien Tournay", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://heikoseeberger.name/", 
+            "company": "Typesafe", 
+            "contributions": 3, 
+            "email": "", 
+            "gravatar_id": "74ed6ae094c65f95eaf15878da44f4fc", 
+            "location": "Germany", 
+            "login": "hseeberger", 
+            "name": "Heiko Seeberger", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://warry.fr", 
+            "company": "Zenexity", 
+            "contributions": 3, 
+            "email": "hello@warry.fr", 
+            "gravatar_id": "12fda944ce03f21eb4f7f9fdd7512a8e", 
+            "location": "Paris", 
+            "login": "Warry", 
+            "name": "Maxime Dantec", 
+            "type": "User"
+        }, 
+        {
+            "blog": "www.anthonyaubertin.com ", 
+            "contributions": 3, 
+            "gravatar_id": "e60906031bb87d8ace8edbdea42600bc", 
+            "location": "France", 
+            "login": "Noxdzine", 
+            "name": "Anthony Aubertin", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 2, 
+            "email": "simons.mail@gmail.com", 
+            "gravatar_id": "a4b6100f651b0ae634a498d88ebdb58d", 
+            "login": "SimonChong", 
+            "name": "Simon Chong", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://bobylito.me", 
+            "contributions": 2, 
+            "gravatar_id": "5bd4a014c260f733feecc1f3f146f7d7", 
+            "login": "bobylito", 
+            "name": "Alex S", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://www.taraxe.com", 
+            "company": "Zenexity", 
+            "contributions": 2, 
+            "gravatar_id": "082c72bbbaec0eda04cddd3df51c048d", 
+            "location": "Paris", 
+            "login": "taraxe", 
+            "name": "Antoine Labbe", 
+            "type": "User"
+        }, 
+        {
+            "blog": "https://twitter.com/analytically", 
+            "company": "", 
+            "contributions": 2, 
+            "email": "mathias.bogaert@gmail.com", 
+            "gravatar_id": "08d76a0a112e498e55e5c55816d4853f", 
+            "location": "Bristol, UK", 
+            "login": "analytically", 
+            "name": "Mathias Bogaert", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://www.manning.com/raychaudhuri/", 
+            "company": "Typesafe", 
+            "contributions": 1, 
+            "email": "nraychaudhuri@gmail.com", 
+            "gravatar_id": "13a98298bb14a7b5b06be2b7d9fe042f", 
+            "location": "Denver, CO", 
+            "login": "nraychaudhuri", 
+            "name": "Nilanjan Raychaudhuri", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "gravatar_id": "b072fc2897196b3bafcd337bc9c91e2d", 
+            "location": "Buenos Aires, Argentina", 
+            "login": "opensas", 
+            "name": "opensas", 
+            "type": "User"
+        }, 
+        {
+            "blog": "ludovf.net", 
+            "company": "Lunatech Research", 
+            "contributions": 1, 
+            "gravatar_id": "bccc91709dd27664090048a490c7cc93", 
+            "location": "Rotterdam, NL", 
+            "login": "ludovicofischer", 
+            "name": "Ludovico Fischer", 
+            "type": "User"
+        }, 
+        {
+            "company": "Knowit Objectnet AS", 
+            "contributions": 1, 
+            "email": "bjarte@bjartek.org", 
+            "gravatar_id": "84f169f5b95f86c1929affb51f5e1007", 
+            "location": "Lillesand, Norway", 
+            "login": "bjartek", 
+            "name": "Bjarte S. Karlsen", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://touilleur-express.fr", 
+            "company": "Le Touilleur Express", 
+            "contributions": 1, 
+            "email": "nicolas@touilleur-express.fr", 
+            "gravatar_id": "09b788738dcb5d36dbd782db5ad66304", 
+            "location": "Paris, France", 
+            "login": "nicmarti", 
+            "name": "Nicolas Martignole", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "gravatar_id": "77b385019f81e2bb8642c928fa3ddafb", 
+            "login": "aababilov", 
+            "name": "Alessio Ababilov", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://jean-francois.im/blog/", 
+            "contributions": 1, 
+            "gravatar_id": "acdd3a8024e196d10109250df8acf6c1", 
+            "location": "Montr\u00e9al, Canada", 
+            "login": "jfim", 
+            "name": "Jean-Fran\u00e7ois Im", 
+            "type": "User"
+        }, 
+        {
+            "company": "akquinet AG", 
+            "contributions": 1, 
+            "gravatar_id": "ab937f7df990a673446f1e30fd9ccfba", 
+            "location": "Berlin", 
+            "login": "cescoffier", 
+            "name": "Clement Escoffier", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "gravatar_id": "c27a1294054155811ec499d013e113a4", 
+            "login": "MathildeLemee", 
+            "type": "User"
+        }, 
+        {
+            "blog": "kjetland.com/blog", 
+            "contributions": 1, 
+            "email": "mbk@kjetland.com", 
+            "gravatar_id": "c6ca9f2d6facabf69800e3e37c7e06d1", 
+            "location": "Bergen, Norway", 
+            "login": "mbknor", 
+            "name": "Morten Kjetland", 
+            "type": "User"
+        }, 
+        {
+            "company": "Typesafe.com", 
+            "contributions": 1, 
+            "email": "fredrik.ekholdt@typesafe.com", 
+            "gravatar_id": "fd82f0d150b5610b9ae146ed1a90c4f4", 
+            "location": "Lausanne, Switzerland", 
+            "login": "freekh", 
+            "name": "Fredrik Ekholdt", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "gravatar_id": "6a5ebd0d316124af7a86329950752c34", 
+            "location": "Germany", 
+            "login": "tuxBurner", 
+            "name": "Seppel Hardt", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://johannes.emerich.de/", 
+            "contributions": 1, 
+            "gravatar_id": "9d278d0e735d2ffcd2a3731529e45b26", 
+            "location": "Berlin, Germany", 
+            "login": "knuton", 
+            "name": "Johannes Emerich", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "gravatar_id": "5f19bf303c2340034d14a72e95b225ec", 
+            "login": "cdow", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://8-p.info/", 
+            "contributions": 1, 
+            "email": "kato.kazuyoshi@gmail.com", 
+            "gravatar_id": "7828b45f8396aa361d85cead01fd99ca", 
+            "location": "Tokyo", 
+            "login": "kzys", 
+            "name": "Kato Kazuyoshi", 
+            "type": "User"
+        }, 
+        {
+            "contributions": 1, 
+            "email": "srenault.contact@gmail.com", 
+            "gravatar_id": "9948409007b84f19e34b0891093d8113", 
+            "login": "srenault", 
+            "name": "S\u00e9bastien RENAULT", 
+            "type": "User"
+        }, 
+        {
+            "blog": "ppassa.wordpress.com", 
+            "company": "Kakao", 
+            "contributions": 1, 
+            "email": "ppassa@gmail.com", 
+            "gravatar_id": "25eeab9707fe3f9c22c3ccc58377c59b", 
+            "location": "Seoul", 
+            "login": "Seyun", 
+            "name": "Justin", 
+            "type": "User"
+        }, 
+        {
+            "blog": "http://fernandezpablo.tumblr.com", 
+            "company": "Globant", 
+            "contributions": 1, 
+            "email": "fernandezpablo85@gmail.com", 
+            "gravatar_id": "99108829176dfbbc5d0bf3c041542a26", 
+            "location": "Argentina", 
+            "login": "fernandezpablo85", 
+            "name": "Pablo Fernandez", 
+            "type": "User"
+        }
+    ]
+}

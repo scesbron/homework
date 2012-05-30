@@ -1,0 +1,22 @@
+{
+    "repository": {
+        "created_at": "2011/09/07 02:24:08 -0700", 
+        "description": "Play framework 2.0", 
+        "fork": false, 
+        "forks": 365, 
+        "has_downloads": true, 
+        "has_issues": false, 
+        "has_wiki": true, 
+        "homepage": "http://www.playframework.org/", 
+        "language": "Scala", 
+        "name": "Play20", 
+        "open_issues": 28, 
+        "organization": "playframework", 
+        "owner": "playframework", 
+        "private": false, 
+        "pushed_at": "2012/05/25 02:56:43 -0700", 
+        "size": 1616, 
+        "url": "https://github.com/playframework/Play20", 
+        "watchers": 1809
+    }
+}

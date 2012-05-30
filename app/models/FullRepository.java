@@ -5,69 +5,83 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.ObjectUtils;
+import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 
+import play.Logger;
+import play.Play;
 import play.libs.F.Promise;
 import play.libs.WS.HttpResponse;
 import utils.UrlUtils;
 
-public class FullRepository extends GithubModel {
-	public String username;
-	public String name;
-	public String nethash;
+public class FullRepository extends LightRepository {
 
-	public List<User> users;
-	public List<User> commiters;
+	public DateTime firstCommitDate;
+	public DateTime lastCommitDate;
 
 	public List<Commit> commits;
-
 	/**
 	 * We initialize commits here because if we do it directly on the commits
 	 * field, initialization is not done when the object is created with gson
 	 * @return
 	 */
-	public List<User> getCommiters() {
-		if (commiters == null) {
-			commiters = new ArrayList<User>();
+	public List<Commit> getCommits() {
+		if (commits == null) {
+			commits = new ArrayList<Commit>();
 		}
-		return commiters;
+		return commits;
+	}
+
+	public List<User> contributors;
+	/**
+	 * We initialize commits here because if we do it directly on the commits
+	 * field, initialization is not done when the object is created with gson
+	 * @return
+	 */
+	public List<User> getContributors() {
+		if (contributors == null) {
+			contributors = new ArrayList<User>();
+		}
+		return contributors;
 	}
 
 	public void setCommits(List<Commit> commits) {
 		this.commits = commits;
 		for (Commit commit : this.commits) {
-			User user = findUserByGravatar(commiters, commit.gravatar);
-			if (user != null) {
-				user.name = commit.login;
-				user.fullname = commit.author;
-				user.gravatar = commit.gravatar;
-			} else {
-				user = new User(commit.login, commit.author, commit.gravatar);
-				commiters.add(user);
+			User user = findContributor(commit.committer.login);
+			if (user == null) {
+				Logger.warn("Found a commit for an unknown user : %s", commit.committer);
+				user = new User(commit.committer.email, commit.committer.login, commit.committer.name);
+				contributors.add(user);
 			}
 			user.commits.add(commit);
+			if (firstCommitDate == null || commit.committedDate.isBefore(firstCommitDate)) {
+				firstCommitDate = commit.committedDate;
+			}
+			if (lastCommitDate == null || commit.committedDate.isAfter(lastCommitDate)) {
+				lastCommitDate = commit.committedDate;
+			}
 		}
 	}
 
-	private User findUserByGravatar(List<User> list, String name) {
-		if (list != null) {
-			for (User user : list) {
-				if (ObjectUtils.equals(user.gravatar, name)) {
-					return user;
-				}
+	private User findContributor(String login) {
+		for (User user : contributors) {
+			if (ObjectUtils.equals(user.login, login)) {
+				return user;
 			}
 		}
 		return null;
 	}
 
 	public Map<Date, Integer> getCommitRepartitionByDate() {
-		Map<Date, Integer> repartition = new HashMap<Date, Integer>();
+		Map<Date, Integer> repartition = new TreeMap<Date, Integer>();
 		if (!CollectionUtils.isEmpty(commits)) {
-			LocalDate date = new LocalDate(commits.get(0).date);
-			LocalDate endDate = new LocalDate(commits.get(commits.size() -1).date);
+			LocalDate date = new LocalDate(firstCommitDate);
+			LocalDate endDate = new LocalDate(lastCommitDate);
 			while (date.isBefore(endDate) || date.isEqual(endDate)) {
 				repartition.put(date.toDateMidnight().toDate(), getCommitCount(date));
 				date = date.plusDays(1);
@@ -79,24 +93,24 @@ public class FullRepository extends GithubModel {
 	private Integer getCommitCount(LocalDate date) {
 		int count = 0;
 		for (Commit commit : commits) {
-			if (date.equals(new LocalDate(commit.date))) {
+			if (date.equals(new LocalDate(commit.committedDate))) {
 				count++;
 			}
 		}
 		return count;
 	}
 
-	public Date getMinDate() {
-		return CollectionUtils.isEmpty(commits) ? null : commits.get(0).date;
-	}
-
 	// STATIC METHODS
 	//~~~~~~~~~~~~~~~
 
-	public static final FullRepository get(String username, String name) {
-		FullRepository repo = find(WS(String.format("/%s/%s/network_meta", username, name)), FullRepository.class);
-		repo.username = username;
-		repo.name = name;
+	public static final FullRepository get(String owner, String name) {
+		String url = String.format("/api/v2/json/repos/show/%s/%s", owner, name);
+		// Hack for test mode because repos/show/owner/repo cannot be a file
+		// It must be a directory when we put contributors file
+		if (Play.runingInTestMode()) {
+			url += "/detail";
+		}
+		FullRepository repo = findCached(url, WS(url), FullRepository.class, "repository");
 		return repo;
 	}
 }

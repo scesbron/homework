@@ -11,6 +11,14 @@ import models.Commit;
 import models.Repository;
 import models.User;
 
+/**
+ * Job that grab all the details of a repository through
+ * several parallel call and return a full repository description
+ * with commits and contributors
+ *
+ * @author sebastien
+ *
+ */
 public class GetFullRepository extends Job<Repository> {
 
 	public String owner;

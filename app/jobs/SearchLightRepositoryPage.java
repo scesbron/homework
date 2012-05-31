@@ -4,6 +4,11 @@ import models.LightRepository;
 import play.jobs.Job;
 import utils.Page;
 
+/**
+ * Jobs that search for reposiories that match the given query
+ * @author sebastien
+ *
+ */
 public class SearchLightRepositoryPage extends Job<Page<LightRepository>> {
 
 	public String query;

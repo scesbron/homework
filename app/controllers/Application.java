@@ -23,7 +23,7 @@ import models.LightRepository;
 import models.User;
 
 /**
- * Controller chargé de la gestion des pages htmls
+ * Controller that handle html pages
  * @author sebastien
  *
  */

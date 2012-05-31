@@ -8,6 +8,11 @@ import models.Repository;
 import play.jobs.Job;
 import play.libs.F;
 
+/**
+ * Job that returns a page of commits for a repository
+ * @author sebastien
+ *
+ */
 public class GetCommitList extends Job<List<Commit>>{
 
 	public String owner;

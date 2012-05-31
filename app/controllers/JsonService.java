@@ -7,10 +7,11 @@ import jobs.SearchLightRepositoryPage;
 import models.GithubModel;
 import models.LightRepository;
 import models.Repository;
+import utils.DateTimeAdapter;
 import utils.Page;
 
 /**
- * Controller qui gère les appels de service pour l'api json
+ * Controller that handles json api calls
  * @author sebastien
  *
  */
@@ -23,6 +24,6 @@ public class JsonService extends Controller {
 
 	public static void show(String owner, String name) {
 		Repository repo = await(new GetFullRepository(owner, name).now());
-		renderJSON(GithubModel.createGson().toJson(repo));
+		renderJSON(repo, new DateTimeAdapter());
 	}
 }

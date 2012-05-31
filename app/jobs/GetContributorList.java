@@ -7,6 +7,11 @@ import play.jobs.Job;
 import models.Commit;
 import models.User;
 
+/**
+ * Jobs that return all the contributors of a repository
+ * @author sebastien
+ *
+ */
 public class GetContributorList extends Job<List<User>> {
 
 	public String owner;

@@ -3,6 +3,11 @@ package jobs;
 import play.jobs.Job;
 import models.Repository;
 
+/**
+ * Job that return basic destails for a repository
+ * @author sebastien
+ *
+ */
 public class GetRepositoryDesc extends Job<Repository> {
 
 	public String owner;

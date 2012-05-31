@@ -1,0 +1,29 @@
+{
+    "repositories": [
+        {
+            "created": "2012/05/21 09:56:24 -0700", 
+            "created_at": "2012/05/21 09:56:24 -0700", 
+            "description": "Homework by scesbron", 
+            "followers": 1, 
+            "fork": false, 
+            "forks": 1, 
+            "has_downloads": true, 
+            "has_issues": true, 
+            "has_wiki": true, 
+            "homepage": "", 
+            "language": "JavaScript", 
+            "name": "homework", 
+            "open_issues": 0, 
+            "owner": "scesbron", 
+            "private": false, 
+            "pushed": "2012/05/30 13:55:58 -0700", 
+            "pushed_at": "2012/05/30 13:55:58 -0700", 
+            "score": 1.395831, 
+            "size": 2260, 
+            "type": "repo", 
+            "url": "https://github.com/scesbron/homework", 
+            "username": "scesbron", 
+            "watchers": 1
+        }
+    ]
+}

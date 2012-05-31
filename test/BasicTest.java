@@ -1,5 +1,5 @@
 import models.Commit;
-import models.FullRepository;
+import models.Repository;
 import models.LightRepository;
 import models.User;
 
@@ -22,7 +22,7 @@ import java.util.concurrent.ExecutionException;
 import play.libs.F.Promise;
 import play.libs.WS.HttpResponse;
 import play.test.*;
-import utils.DateTimeDeserializer;
+import utils.DateTimeAdapter;
 import utils.Page;
 
 public class BasicTest extends UnitTest {
@@ -38,7 +38,7 @@ public class BasicTest extends UnitTest {
     	commits.add(new Commit(user, formatter.parseDateTime("2012-05-21 11:59:44")));
     	commits.add(new Commit(user, formatter.parseDateTime("2012-05-23 13:29:17")));
 
-    	FullRepository repo = new FullRepository();
+    	Repository repo = new Repository();
     	repo.commits = commits;
 
     	assertEquals(1, repo.contributors.size());
@@ -72,7 +72,7 @@ public class BasicTest extends UnitTest {
     @Test
     public void testParseDate() {
     	JsonElement element = new JsonPrimitive("2012-05-25T02:56:30-07:00");
-    	DateTimeDeserializer deserializer = new DateTimeDeserializer();
+    	DateTimeAdapter deserializer = new DateTimeAdapter();
     	DateTime date = deserializer.deserialize(element, DateTime.class, null);
     	assertNotNull(date);
     	assertEquals(2012, date.getYear());

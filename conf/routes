@@ -8,6 +8,9 @@ GET     /                                       Application.index
 GET     /{username}/{name}                      Application.showRepo
 GET     /reponames                              Application.getRepoNames
 
+GET     /json/search/{query}                    JsonService.search
+GET     /json/show/{owner}/{name}               JsonService.show
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

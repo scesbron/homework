@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -35,11 +36,15 @@ public class Commit extends GithubModel {
 	// STATIC METHODS
 	//~~~~~~~~~~~~~~~
 
-	public static final List<Commit> findList(String owner, String name) {
-		return findList(owner, name, "master");
+	public static final List<Commit> findList(String owner, String name, int page) {
+		return findList(owner, name, "master", page);
 	}
 
-	public static final List<Commit> findList(String owner, String name, String branch) {
-		return findList(WS(String.format("/api/v2/json/commits/list/%s/%s/%s", owner, name, branch)), Commit.class, "commits");
+	public static final List<Commit> findList(String owner, String name, String branch, int page) {
+		if (page < 1) {
+			page = 1;
+		}
+		String url = String.format("/api/v2/json/commits/list/%s/%s/%s", owner, name, branch);
+		return new ArrayList<Commit>(findCachedList(url + "/" + page, WS(url).setParameter("page", page), Commit.class, "commits"));
 	}
 }

@@ -1,11 +1,29 @@
 #{extends 'main.html' /}
 #{set title: messages.get('show.title', username, name) /}
+#{set 'moreStyles'}
+#{press.stylesheet 'datatables-bootstrap.css'/}
+#{/set}
 #{set 'moreScripts'}
 #{press.script 'highcharts.js'/}
+#{press.script 'jquery.dataTables.js' /}
+#{press.script 'datatables-bootstrap.js' /}
 <script type="text/javascript">
 var chartCommiters;
 var timeline;
 $(document).ready(function() {
+  $('#table').dataTable({
+    "sDom": "<'row-fluid'<'span6'l><'span6'f>>t<'row-fluid'<'span6'i><'span6'p>>",
+    "sWrapper": "dataTables_wrapper form-inline",
+    "sPaginationType": "bootstrap",
+    "oLanguage": #{tableTranslation/},
+    "aoColumns": [
+      { "asSorting": [ "asc", "desc" ], sWidth: '300px' },
+      { "asSorting": [ "asc", "desc" ], sWidth: '300px' },
+      { "asSorting": [ "asc", "desc" ], sWidth: '300px' },
+      { "asSorting": [ "asc", "desc" ], sWidth: '40px' }
+    ],
+    "aaSorting": [[3,'desc']]
+  });
   chartCommiters = new Highcharts.Chart({
     chart: {
       renderTo: 'commiters-chart',
@@ -16,7 +34,7 @@ $(document).ready(function() {
     },
     xAxis: {
       categories: [
-#{list repo?.contributors, as:'user'}
+#{list repo?.getContributorsWithCommits(), as:'user'}
         '${user.name.raw()}'#{ifnot user_isLast},#{/ifnot}
 #{/list}
       ]
@@ -29,7 +47,7 @@ $(document).ready(function() {
     series: [{
       name: '&{'commit.number'}',
       data: [
-#{list repo?.contributors, as:'user'}
+#{list repo?.getContributorsWithCommits(), as:'user'}
         ${user.commits.size()}#{ifnot user_isLast},#{/ifnot}
 #{/list}
       ]
@@ -84,15 +102,69 @@ $(document).ready(function() {
   </div>
 #{if repo}
 	<ul class="nav nav-tabs" id="myTab">
-		<li class="active"><a href="#commiters" data-toggle="tab">Commiters</a></li>
+    <li class="active"><a href="#details" data-toggle="tab">Détails</a></li>
+    <li><a href="#commiters" data-toggle="tab">Active Committers</a></li>
 		<li><a href="#timeline" data-toggle="tab">Timeline</a></li>
+    <li><a href="#contributors" data-toggle="tab">Contributors</a></li>
 	</ul>
 	<div class="tab-content">
-	  <div class="tab-pane active" id="commiters">
-	    <div id="commiters-chart" style="width: 100%; height: ${150 + repo.contributors.size() * 20}px"></div>
+    <div class="tab-pane active form-horizontal" id="details">
+      <div class="control-group">
+        <label class="control-label">Nom :</label>
+        <div class="controls"><label>${repo.name}</label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Description :</label>
+        <div class ="controls"><label>${repo.description}</label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Langage :</label>
+        <div class ="controls"><label>${repo.language}</label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Home page :</label>
+        <div class ="controls"><label><a href="${repo.homepage}" target="_blank">${repo.homepage}</a></label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Page github :</label>
+        <div class ="controls"><label><a href="${repo.url}" target="_blank">${repo.url}</a></label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Watchers :</label>
+        <div class ="controls"><label>${repo.watchers}</label></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Contributeurs :</label>
+        <div class ="controls"><label>${repo.contributors.size()}</label></div>
+      </div>
+    </div>
+	  <div class="tab-pane" id="commiters">
+	    <div id="commiters-chart" style="width: 940px; height: ${150 + repo.getContributorsWithCommits().size() * 20}px"></div>
     </div>
     <div class="tab-pane" id="timeline">
       <div id="timeline-chart" style="width: 940px; height: 400px"></div>
+    </div>
+    <div class="tab-pane" id="contributors">
+      <table id="table" class="table table-striped table-condensed table-bordered">
+        <thead>
+          <tr>
+            <th>Login</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Cont.</th>
+          </tr>
+        </thead>
+        <tbody>
+#{list repo.contributors, as: 'user'}
+          <tr class="with-popover" title="${user.login}" data-content="Nom : ${user.name}<br/>Company : ${user.company}<br/>Location : ${user.location}<br/><div class='center'><img src='http://www.gravatar.com/avatar/${user.gravatarId}'></div>">
+            <td>${user.login}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.contributions}</td>
+          </tr>
+#{/list}
+        </tbody>
+      </table>
     </div>
   </div>
 #{/if}

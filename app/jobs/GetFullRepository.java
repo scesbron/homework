@@ -2,13 +2,16 @@ package jobs;
 
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
-import models.Commit;
-import models.FullRepository;
-import models.User;
 import play.jobs.Job;
+import play.libs.F;
+import play.libs.F.T5;
+import models.Commit;
+import models.Repository;
+import models.User;
 
-public class GetFullRepository extends Job<FullRepository> {
+public class GetFullRepository extends Job<Repository> {
 
 	public String owner;
 	public String name;
@@ -18,11 +21,20 @@ public class GetFullRepository extends Job<FullRepository> {
 		this.name = name;
 	}
 	@Override
-	public FullRepository doJobWithResult() throws Exception {
-		FullRepository repo = FullRepository.get(owner, name);
-		repo.contributors = User.findContributorsList(owner, name);
-    	repo.commits = Commit.findList(owner, name);
+	public Repository doJobWithResult() throws Exception {
+    	T5<Repository, List<User>, List<Commit>, List<Commit>, List<Commit>> responses = F.Promise.wait5(
+    			new GetRepositoryDesc(owner, name).now(),
+    			new GetContributorList(owner, name).now(),
+    			new GetCommitList(owner, name, 1).now(),
+    			new GetCommitList(owner, name, 2).now(),
+    			new GetCommitList(owner, name, 3).now()).get();
 
+    	Repository repo = responses._1;
+    	repo.contributors = responses._2;
+    	List<Commit> commits = responses._3;
+    	commits.addAll(responses._4);
+    	commits.addAll(responses._5);
+    	repo.commits = commits;
     	// Sort users by number of commits
     	Collections.sort(repo.contributors, new Comparator<User>() {
     		public int compare(User user1, User user2) {
@@ -31,5 +43,4 @@ public class GetFullRepository extends Job<FullRepository> {
 		});
     	return repo;
 	}
-
 }

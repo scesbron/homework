@@ -22,7 +22,7 @@ import play.cache.Cache;
 import play.data.binding.types.DateBinder;
 import play.libs.WS.HttpResponse;
 import play.libs.WS.WSRequest;
-import utils.DateTimeDeserializer;
+import utils.DateTimeAdapter;
 
 public class GithubModel implements Serializable {
 
@@ -129,10 +129,10 @@ public class GithubModel implements Serializable {
 		return request;
 	}
 
-	protected static Gson createGson() {
+	public static Gson createGson() {
 		GsonBuilder builder = new GsonBuilder();
 		// TODO better date handling
-		builder.registerTypeAdapter(DateTime.class, new DateTimeDeserializer());
+		builder.registerTypeAdapter(DateTime.class, new DateTimeAdapter());
 		if (Logger.isDebugEnabled()) {
 			builder.setPrettyPrinting();
 		}

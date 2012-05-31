@@ -48,6 +48,7 @@ public class User extends GithubModel {
 	//~~~~~~~~~~~~~~~
 
 	public static final List<User> findContributorsList(String owner, String name) {
-		return findList(WS(String.format("/api/v2/json/repos/show/%s/%s/contributors", owner, name)), User.class, "contributors");
+		String url = String.format("/api/v2/json/repos/show/%s/%s/contributors", owner, name);
+		return new ArrayList<User>(findCachedList(url, WS(url), User.class, "contributors"));
 	}
 }

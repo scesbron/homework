@@ -49,3 +49,11 @@ input#search {
 #data {
 	margin-bottom: 20px;
 }
+div.controls label {
+	padding-top: 5px;
+	font-weight: bold;
+}
+/** avoid scroll in tab-content, seems to be a bootstrap bug */
+#contributors {
+	 height:500px;
+}

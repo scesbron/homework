@@ -1,5 +1,5 @@
 import models.Commit;
-import models.FullRepository;
+import models.Repository;
 import models.LightRepository;
 import models.User;
 
@@ -7,7 +7,10 @@ import org.junit.*;
 import java.util.*;
 import java.util.concurrent.ExecutionException;
 
-import jobs.GetFullRepository;
+import jobs.GetCommitList;
+import jobs.GetContributorList;
+import jobs.GetRepositoryDesc;
+import jobs.SearchLightRepositoryPage;
 
 import play.cache.Cache;
 import play.libs.F.Promise;
@@ -24,7 +27,7 @@ public class GithubApiTest extends UnitTest {
 
     @Test
     public void searchLightRepository() throws Exception {
-    	Page<LightRepository> page = LightRepository.getPage("homework", 1);
+    	Page<LightRepository> page = new SearchLightRepositoryPage("homework", 1).now().get();
     	assertNotNull(page);
     	assertNotNull(page.data);
     	assertEquals(LightRepository.PAGE_SIZE, page.data.size());
@@ -37,7 +40,7 @@ public class GithubApiTest extends UnitTest {
 
     @Test
     public void getFullRepository() throws Exception {
-    	FullRepository repo = FullRepository.get("playframework", "play20");
+    	Repository repo = new GetRepositoryDesc("playframework", "play20").now().get();
     	assertNotNull(repo);
     	assertEquals("Play framework 2.0", repo.description);
     	assertEquals("playframework", repo.owner);
@@ -48,7 +51,7 @@ public class GithubApiTest extends UnitTest {
 
     @Test
     public void getCommits() throws Exception {
-    	List<Commit> commits = Commit.findList("playframework", "play20");
+    	List<Commit> commits = new GetCommitList("playframework", "play20", 1).now().get();
     	assertNotNull(commits);
     	assertEquals("fixed typo", commits.get(0).message);
     	assertNotNull(commits.get(0).committedDate);
@@ -56,20 +59,8 @@ public class GithubApiTest extends UnitTest {
 
     @Test
     public void getContributors() throws Exception {
-    	List<User> contributors = User.findContributorsList("playframework", "play20");
+    	List<User> contributors = new GetContributorList("playframework", "play20").now().get();
     	assertNotNull(contributors);
     	assertEquals("pk11", contributors.get(0).login);
-    }
-
-    @Test
-    public void getRepositoryWithCommitsAndContributors() throws Exception {
-    	FullRepository repo = new GetFullRepository("playframework", "play20").now().get();
-    	assertNotNull(repo);
-    	assertEquals("Play framework 2.0", repo.description);
-    	assertEquals("playframework", repo.owner);
-    	assertEquals("Play20", repo.name);
-    	assertFalse(repo.commits.isEmpty());
-    	assertFalse(repo.contributors.isEmpty());
-    	assertFalse(repo.contributors.get(0).commits.isEmpty());
     }
 }
